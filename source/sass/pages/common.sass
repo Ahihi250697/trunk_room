@@ -1,0 +1,30 @@
+@import ../Abstract/__variables
+@import ../Abstract/__extend
+@import ../Abstract/__mixin
+
+@font-face 
+    font-family: 'SourceHanSans-N'
+    src: url('../assets/fonts/SourceHanSans-Normal.otf')
+@font-face 
+    font-family: 'SourceHanSans-R'
+    src: url('../assets/fonts/SourceHanSans-Regular.otf')
+@font-face 
+    font-family: 'SourceHanSans-M'
+    src: url('../assets/fonts/SourceHanSans-Medium.otf')
+@font-face 
+    font-family: 'SourceHanSans-B'
+    src: url('../assets/fonts/SourceHanSans-Bold.otf')
+
+body 
+    font-family: 'SourceHanSans-N', "游ゴシック", "Yu Gothic", "游ゴシック体", 'YuGothic', sans-serif
+    font-size: 1.6rem
+    font-weight: 300 
+    +m()
+        font-size: 1.4rem
+    main
+        +CSSIE()
+            overflow-x: hidden
+            
+@import ../Layout/__header
+@import ../Layout/__footer
+@import ../Layout/__common
