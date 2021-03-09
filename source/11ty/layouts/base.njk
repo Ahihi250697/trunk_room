@@ -2,13 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Setting up Eleventy with Preact and htm</title>
+    <title>{{ title }}</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="/index.css">
   </head>
   <body>
-    <div class="LayoutDefault"><main><div class="App"></div></main><footer class="LayoutDefault__footer"></footer></div>
+    {{ content | safe }}
   </body>
 </html>

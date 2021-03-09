@@ -1,40 +1,26 @@
+/* eslint-disable class-methods-use-this */
+const { html } = require(`htm/preact`);
+const { render} = require(`preact-render-to-string`);
 
-// let links = require('./global/variables.11ty')
-const { html } = require('htm/preact');
-const render = require('preact-render-to-string');
-console.log(render);
+const App = require(`./components/app`);
 
-// exports.data = {
-//     title: 'top',
-//     path: path.top[0],
-//     css: ['css/top.css'],
-//     layout: "../layouts/base.11ty.js",
-//   };
-// console.log(links);
+module.exports = class Page {
+  data() {
+    return {
+      title: `Setting up Eleventy with Preact and htm`,
+      layout: `base.njk`,
+      pagination: {
+        data: `global`,
+        size: 1,
+        alias: `page`,
+        addAllPagesToCollections: true,
+      },
+      names: (page)=> `${page.name}`
+    };
+  }
 
-module.exports = class page {
-    data() {
-        return {
-            title: 'Top',
-            layout: '../layouts/base.11ty.js',
-            path: './',
-            css: ['css/top.css']
-        }
-    }
-    render(data) {
-        return render.render(html`
-            <header></header>
-        `)
-    }
-}
-
-
-
-//   exports.render = function(data) {
-//     return `
-//         ${header(data.path)}
-//         ${primary(data)}
-//         ${footer(data.path)}
-//     `;
-//   };
-
+  render(data) {
+      console.log(data);
+    return render(html`<${App}/>`);
+  }
+};

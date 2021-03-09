@@ -6,7 +6,7 @@ module.exports = function(eleventyConfig){
             output: 'source/site',
             includes: 'includes',
             layouts: "layouts",
-            data: 'common'
+            data: 'data'
         }
     }
         
