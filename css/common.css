@@ -1,8 +1,29 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Noto Sans CJK JP';
+    src: url('../assets/fonts/NotoSansCJKjp-Bold.otf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Noto Sans CJK JP';
+    src: url('../assets/fonts/NotoSansCJKjp-Medium.otf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Noto Sans CJK JP';
+    src: url('../assets/fonts/NotoSansCJKjp-Regular.otf');
+    font-weight: 400;
+}
+
+
 body {
-    font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
+    font-family: "Noto Sans CJK JP", "Yu Gothic", "游ゴシック体", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
     font-size: 1.6rem;
+    color: #333333;
+    font-weight: 400;
 }
 
 @media screen and (max-width: 768px) {
