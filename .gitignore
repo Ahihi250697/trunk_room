@@ -1,2 +1,9 @@
 node_modules
 app
+source
+gulpfile.js
+package-lock.json
+package.json
+webpack.config.js
+.eleventy.js
+.eleventyignore
