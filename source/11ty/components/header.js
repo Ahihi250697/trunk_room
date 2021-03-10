@@ -45,6 +45,15 @@ module.exports = () => html`
                 <a href="#" class="a-default">${list}</a>
               </li>`
           )}
+          <li class="nav-list forSp">
+            <a href="#" class="a-default">見学予約・お申込み</a>
+          </li>
+          <li class="nav-list forSp">
+            <a href="#" class="a-default">プライバシーポリシー</a>
+          </li>
+          <li class="nav-list forSp">
+            <a href="#" class="a-default">運営会社</a>
+          </li>
         </ul>
       </nav>
     </div>
