@@ -1,43 +1,421 @@
 @charset "UTF-8";
+.footer-logo, .contact-phone {
+  font-size: 2.5rem;
+}
 
-@font-face {
-    font-family: 'Noto Sans CJK JP';
-    src: url('../assets/fonts/NotoSansCJKjp-Bold.otf');
-    font-weight: 700;
+.btn-email span, .btn-arrow span, .header-logo a span:last-of-type {
+  font-size: 2rem;
+}
+
+.contact-email {
+  font-size: 1.5rem;
+}
+
+.footer-nav .nav-list, .footer .copyright p, .footer-lineHead p, .contact-local {
+  font-size: 1.4rem;
+}
+
+.header-logo a span:first-child {
+  font-size: 1.3rem;
+}
+
+.img-default {
+  width: auto;
+  max-width: 100%;
+  display: block;
+}
+
+.a-default {
+  display: block;
+  outline: none;
+  color: inherit;
+}
+
+.a-hover {
+  transition: opacity 0.3s ease;
+}
+.a-hover:hover {
+  opacity: 0.8;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.btn-default {
+  outline: none;
+}
+
+.wrap-img {
+  display: block;
+}
+
+.cm-container {
+  max-width: 1120px;
+  padding: 0px 20px;
+  width: 100%;
+  margin: auto;
 }
 
 @font-face {
-    font-family: 'Noto Sans CJK JP';
-    src: url('../assets/fonts/NotoSansCJKjp-Medium.otf');
-    font-weight: 500;
+  font-family: "Noto Sans CJK JP";
+  src: url("../assets/fonts/NotoSansCJKjp-Bold.otf");
+  font-weight: 700;
 }
-
 @font-face {
-    font-family: 'Noto Sans CJK JP';
-    src: url('../assets/fonts/NotoSansCJKjp-Regular.otf');
-    font-weight: 400;
+  font-family: "Noto Sans CJK JP";
+  src: url("../assets/fonts/NotoSansCJKjp-Medium.otf");
+  font-weight: 500;
 }
-
-
+@font-face {
+  font-family: "Noto Sans CJK JP";
+  src: url("../assets/fonts/NotoSansCJKjp-Regular.otf");
+  font-weight: 400;
+}
 body {
-    font-family: "Noto Sans CJK JP", "Yu Gothic", "游ゴシック体", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
+  font-family: "Noto Sans CJK JP", "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #333333;
+  font-weight: 400;
+}
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 1.4rem;
+  }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  body main {
+    overflow-x: hidden;
+  }
+}
+body .main {
+  padding-top: 145px;
+}
+@media screen and (max-width: 767px) {
+  body .main {
+    padding-top: 60px;
+  }
+}
+
+.header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+}
+@media screen and (max-width: 767px) {
+  .header .cm-container {
+    padding-right: 0px;
+  }
+  .header #barNav {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  .header #barNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .header #barNav span {
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #333333;
+    position: absolute;
+  }
+  .header #barNav span:last-of-type {
+    transform: translateY(12px);
+  }
+  .header #barNav span:first-of-type {
+    transform: translateY(-12px);
+  }
+}
+.header-wrap {
+  padding: 15px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .header-wrap {
+    padding: 0px;
+  }
+}
+.header-logo a span {
+  line-height: 1;
+}
+.header-logo a span:first-child {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+  .header-logo a span:first-child {
+    display: none;
+  }
+}
+.header-logo a span:last-of-type {
+  color: #00B5BB;
+  font-weight: 700;
+}
+@media screen and (max-width: 767px) {
+  .header-logo a span:last-of-type {
     font-size: 1.6rem;
-    color: #333333;
-    font-weight: 400;
+  }
+}
+.header-contact {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 700;
+}
+@media screen and (max-width: 767px) {
+  .header-contact {
+    align-items: center;
+  }
+}
+.header-contact > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .header-contact > * {
+    display: flex;
+    height: 60px;
+    width: 60px !important;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 6px 0px !important;
+  }
+}
+.header-contact .forSp {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .header-contact .forSp {
+    display: block;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header-contact span:not(.forSp) {
+    display: none;
+  }
+}
+.header-nav {
+  padding: 15px 0px;
+}
+@media screen and (max-width: 767px) {
+  .header-nav {
+    position: absolute;
+    padding: 0px;
+    top: 100%;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+  }
+  .header-nav .nav-lists {
+    background-color: #E5FEFF;
+    display: block;
+  }
+  .header-nav .nav-list {
+    font-size: 1.6rem;
+    padding: 0px 50px !important;
+  }
+  .header-nav .nav-list a {
+    padding: 10px 0px;
+  }
 }
 
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 1.4rem;
-    }
+.contact-phone {
+  color: black;
+  margin-right: 33px;
+}
+.contact-phone img {
+  margin-right: 14px;
+}
+@media screen and (max-width: 767px) {
+  .contact-phone {
+    display: none !important;
+  }
+}
+.contact-email {
+  padding: 14px 21px;
+  max-width: 296px;
+}
+@media screen and (max-width: 767px) {
+  .contact-email {
+    border-radius: 0px !important;
+    font-size: 1.4rem;
+  }
+}
+.contact-email figure {
+  width: 31px;
+  margin-right: 13px;
+}
+@media screen and (max-width: 767px) {
+  .contact-email figure {
+    margin-right: 0px;
+  }
+}
+.contact-email figure svg {
+  width: 100%;
+}
+.contact-local {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .contact-local {
+    display: flex;
+    background-color: #00B5BB;
+    color: white;
+  }
+  .contact-local img {
+    width: 26px;
+  }
 }
 
-body>main {
-    -ms-overflow-x: hidden;
+.nav-lists {
+  display: flex;
+  justify-content: center;
+}
+.nav-list:not(:last-child) {
+  border-right: 1px solid #CCCCCC;
+}
+@media screen and (max-width: 767px) {
+  .nav-list {
+    border-right: none;
+    border-top: 1px solid #CCCCCC;
+  }
+}
+.nav-list a {
+  line-height: 1.6;
 }
 
-@supports (-ms-ime-align: auto) {
-    body>main {
-        overflow: hidden;
-    }
+.header-nav .nav-list {
+  padding: 0px 55px;
 }
+
+.btn-oran {
+  background-color: #EF8000;
+  width: 100%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+.btn-oran span {
+  color: white;
+}
+
+.btn-arrow {
+  height: 70px;
+  max-width: 430px;
+  margin: 45px auto 0px;
+  justify-content: flex-end;
+  padding-right: 40px;
+}
+@media screen and (max-width: 767px) {
+  .btn-arrow {
+    height: 50px;
+  }
+}
+.btn-arrow span {
+  margin-right: 35px;
+}
+@media screen and (max-width: 767px) {
+  .btn-arrow span {
+    font-size: 1.6rem;
+  }
+}
+
+.btn-email {
+  max-width: 420px;
+  height: 80px;
+  justify-content: center;
+  font-weight: 700;
+}
+@media screen and (max-width: 767px) {
+  .btn-email {
+    height: 60px;
+  }
+}
+.btn-email span {
+  margin-left: 19px;
+}
+@media screen and (max-width: 767px) {
+  .btn-email span {
+    font-size: 1.6rem;
+    margin-left: 15px;
+  }
+}
+
+.footer {
+  padding-top: 35px;
+  border-top: 1px solid #CCCCCC;
+  margin-top: 80px;
+}
+.footer-logo {
+  font-weight: 700;
+  line-height: 1;
+}
+.footer-logo span {
+  color: #00B5BB;
+}
+.footer-lineHead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .footer-lineHead {
+    display: block;
+  }
+}
+.footer-lineHead > *:not(:last-child) {
+  margin-right: 25px;
+}
+@media screen and (max-width: 767px) {
+  .footer-lineHead p {
+    text-align: center;
+  }
+}
+.footer .copyright {
+  background-color: #E5FEFF;
+}
+.footer .copyright p {
+  text-align: center;
+  padding: 15px 0px;
+  line-height: 1;
+  color: #00B5BB;
+}
+.footer-nav {
+  margin: 45px auto 35px;
+}
+@media screen and (max-width: 767px) {
+  .footer-nav {
+    margin: 30px auto 0px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer-nav .nav-lists {
+    display: block;
+  }
+}
+.footer-nav .nav-list {
+  padding: 0px 30px;
+}
+@media screen and (max-width: 767px) {
+  .footer-nav .nav-list {
+    text-align: center;
+    padding: 10px 20px;
+  }
+}
+/*# sourceMappingURL=sourcemap/common.css.map */

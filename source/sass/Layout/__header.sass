@@ -1,2 +1,185 @@
 
-.header
+.header 
+    position: fixed 
+    top: 0px 
+    left: 0px 
+    width: 100%
+    background-color: white
+    z-index: 10
+    +m()
+        .cm-container
+            padding-right: 0px
+        #barNav 
+            display: none 
+            +m()
+                display: flex
+                align-items: center 
+                justify-content: center
+                position: relative
+                span
+                    width: 30px 
+                    height: 4px 
+                    border-radius: 2px 
+                    background-color: #333333
+                    position: absolute
+                    &:last-of-type
+                        transform: translateY(12px)
+                    &:first-of-type
+                        transform: translateY(-12px)
+    &-wrap 
+        padding: 15px 0px
+        display: flex 
+        align-items: center 
+        justify-content: space-between
+        +m()
+            padding: 0px
+    &-logo 
+        a 
+            span 
+                line-height: 1
+                &:first-child
+                    @extend %__font13
+                    font-weight: 400 
+                    margin-bottom: 10px
+                    +m()
+                        display: none
+                &:last-of-type 
+                    color: $colorbase
+                    font-weight: 700 
+                    @extend %__font20
+                    +m()
+                        font-size: 1.6rem
+    &-contact 
+        display: flex
+        justify-content: flex-end
+        font-weight: 700
+        +m()
+            align-items: center
+        &>* 
+            display: flex 
+            align-items: center
+            justify-content: center
+            +m()
+                display: flex
+                height: 60px 
+                width: 60px !important
+                flex-direction: column
+                justify-content: space-between
+                padding: 6px 0px !important
+                    // align-items: 
+        .forSp
+            display: none 
+            +m()
+                display: block 
+        +m()
+            span
+                &:not(.forSp)
+                    display: none
+    &-nav 
+        padding: 15px 0px
+        +m()
+            // display: none
+            position: absolute
+            padding: 0px
+            top: 100% 
+            left: 0px 
+            width: 100%
+            z-index: -1
+            .nav
+                &-lists 
+                    background-color: $colorbg
+                    display: block
+                &-list 
+                    font-size: 1.6rem
+                    padding: 0px 50px !important
+                    a 
+                        padding: 10px 0px 
+
+.contact 
+    &-phone 
+        @extend %__font25
+        color: black
+        margin-right: 33px
+        img
+            margin-right: 14px
+        +m()
+            display: none !important
+    &-email 
+        @extend %__font15
+        padding: 14px 21px 
+        max-width: 296px
+        +m()
+            border-radius: 0px !important
+            font-size: 1.4rem
+        figure
+            // height: 22px
+            width: 31px
+            margin-right: 13px
+            +m()
+                margin-right: 0px
+            svg 
+                width: 100%
+    &-local 
+        display: none 
+        @extend %__font14
+        +m()
+            display: flex
+            background-color: $colorbase
+            color: white
+            img 
+                width: 26px
+                // height: 100%
+.nav
+    &-lists 
+        display: flex
+        justify-content: center
+    &-list 
+        // padding: 0px 55px
+        &:not(:last-child) 
+            border-right: 1px solid $colordefault
+        +m()
+            border-right: none 
+            border-top: 1px solid $colordefault
+        a 
+            line-height: 1.6
+.header-nav 
+    .nav-list 
+        padding: 0px 55px
+.btn-oran 
+    background-color: $colorOrange
+    width: 100% 
+    font-weight: bold
+    display: flex
+    align-items: center 
+    border-radius: 10px
+    span
+        color: white
+.btn-arrow
+    height: 70px
+    max-width: 430px
+    margin: 45px auto 0px
+    justify-content: flex-end
+    padding-right: 40px
+    +m()
+        height: 50px
+        // padding-right: 25px
+    span 
+        @extend %__font20
+        margin-right: 35px
+        +m()
+            font-size: 1.6rem
+            // margin-right: 30px
+        
+.btn-email
+    max-width: 420px 
+    height: 80px 
+    justify-content: center
+    font-weight: 700
+    +m()
+        height: 60px
+    span 
+        margin-left: 19px
+        @extend %__font20
+        +m()
+            font-size: 1.6rem
+            margin-left: 15px

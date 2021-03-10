@@ -3,16 +3,336 @@
 @import ../Abstract/__mixin
 // @import ../Layout/__common
 
-.mvShow
-    height: 0px 
-    padding-bottom: 42.86% 
+.style-h2 
+    font-weight: 700 
+    text-align: center
+    line-height: 1.4
+    span 
+        display: block 
+    .line-under
+        width: 100px
+        height: 5px
+        // background-color: $colorbase
+        background-image: linear-gradient(to right, $colorbase 0% 50%, $colordefault 50% 100%)
+        margin: 0px auto
+        border-radius: 2.5px
+        margin-top: 15px
+    .text-title 
+        @extend %__font30
+        +m()
+            font-size: 2.2rem
+
+.noFee 
+    padding-top: 70px
+    &-title 
+        &::first-letter
+            @extend %__font40
+            color: $colorbase
+            +m()
+                font-size: 2.6rem
+    &-boxs 
+        display: flex
+        justify-content: space-between
+        margin-top: 45px
+        +m()
+            display: block
+            +m()
+                margin-top: 40px
+        &>*
+            max-width: 340px
+            width: calc(100%/3 - 15px)
+            +m()
+                max-width: 580px
+                width: 100%
+    &-box 
+        border-radius: 15px 
+        border: 2px solid $colorbase
+        overflow: hidden
+        +m()
+            margin: auto
+            &:not(:last-child) 
+                margin-bottom: 30px
+        &:last-child
+            .noFee-target 
+                @extend %__font23
+                img 
+                    margin-right: 11px
+    &-zero 
+        padding-top: 5px
+        .wrapNum
+            display: table
+            line-height: 1
+            font-weight: bold
+            margin: 0px auto
+            &.maker 
+                &::after
+                    left: -6px 
+                    right: -6px
+                    height: 40px 
+                    +m()
+                        height: 20px
+            .yen 
+                @extend %__font56
+            .zero 
+                @extend %__font103
+                color: $colorbase
+        .notice 
+            @extend %__font13
+            text-align: center
+            margin: 15px auto 12px
+            // +m()
+            //     font-size: 1.2rem
+    &-target 
+        display: flex
+        align-items: center
+        justify-content: center
+        color: $colorbase
+        @extend %__font25
+        height: 70px
+        background-color: $colorbg
+        +m()
+            font-size: 1.8rem !important
+            height: 50px
+        img 
+            margin-right: 21px
+            +m()
+                margin-right: 15px 
+                height: 30px
+
+.maker 
     position: relative
-    z-index: 0 
-    &-img 
+    &::after
+        content: ''
+        background-color: $colorYellow
+        position: absolute
+        bottom: 0px
+        z-index: -1
+
+.storage
+    position: relative
+    +m()
+        // img 
+        //     min-height: 300px
+        //     object-fit: cover
+        //     object-position: center
+    &-content 
         position: absolute 
-        top: 0px 
-        left: 0px 
+        top: 50% 
+        left: 50% 
+        transform: translate(-50%, -50%)
         width: 100%
-        height: 100%
-        background-image: url('../images/top/img_mv1.jpg')
-        background-size: cover
+        padding: 0px 20px
+    &-passage 
+        @extend %__font30 
+        font-weight: 700
+        text-align: center
+        +m()
+            font-size: 2rem
+        &>span
+            @extend %__font40 
+            +m()
+                font-size: 2.4rem
+        .text-blue 
+            color: $colorbase
+            position: relative 
+            // margin: 0px 2px
+            // letter-spacing: 0.05rem
+            &::before
+                content: ''
+                top: -9px 
+                left: 50% 
+                transform: translateX(-50%)
+                width: 10px
+                height: 10px 
+                border-radius: 50%
+                position: absolute
+                background-color: $colorbase
+                +m()
+                    width: 5px 
+                    height: 5px
+                    top: -5px
+        .text-orange 
+            color: $colorOrange
+            &::after
+                left: -3px 
+                height: 30px 
+                right: -3px
+                margin-right: 5px
+                +m()
+                    height: 15px
+.useTarget, .storage
+    margin-top: 80px
+
+.useTarget 
+    &-lists 
+        display: flex 
+        justify-content: space-between
+        margin-top: 50px
+        +m()
+            display: block
+    &-list 
+        max-width: 240px 
+        width: calc(100%/4 - 10px)
+        border-radius: 10px 
+        overflow: hidden
+        border: 2px solid $colorbase
+        +m()
+            width: 100%
+            max-width: 100%
+    &-img 
+        position: relative 
+        .order 
+            position: absolute
+            z-index: 1 
+            top: 0px 
+            left: 0px
+            display: block
+            height: 39px 
+            width: 39px 
+            // border-top-left-radius: 10px
+            border-bottom-right-radius: 10px
+            background-color: $colorbase
+            color: white 
+            font-weight: bold 
+            @extend %__font20
+            display: flex
+            align-items: center
+            justify-content: center
+    &-passage 
+        white-space: pre-line
+        text-align: center
+        font-weight: 700
+        height: 100px 
+        display: flex
+        align-items: center
+        justify-content: center
+
+.sanadayama
+    padding-top: 90px
+    margin-top: 75px
+    background-image: url('../images/top/bg_sink.png')
+    background-size: 100% auto
+    background-position: center top
+    background-repeat: no-repeat
+    +m()
+        padding-top: 40px 
+        margin-top: 50px
+    &-lists 
+        display: flex
+        padding: 50px 35px 0px
+        background-color: white
+        flex-wrap: wrap
+        justify-content: space-between
+        margin-top: 50px
+        +m()
+            display: block
+            padding: 0px
+            margin-top: 40px
+    &-list 
+        max-width: 490px 
+        width: calc(50% - 5px)
+        display: flex
+        align-items: flex-start
+        margin-bottom: 50px
+        +m()
+            max-width: 580px
+            margin-right: auto 
+            margin-left: auto
+            width: 100%
+            margin-bottom: 30px
+            &:last-child 
+                margin-bottom: 0px
+        figure 
+            margin-right: 20px
+        h3
+            font-weight: 700 
+            color: $colorbase 
+            border-bottom: 2px dashed $colorbase
+            line-height: 1.4 
+            @extend %__font18
+            padding-bottom: 6px
+            +m()
+                font-size: 1.6rem
+        p 
+            margin-top: 8px
+
+.support 
+    margin-top: 60px
+    &-board 
+        border-radius: 10px 
+        border: 2px solid $colorbase
+        padding-bottom: 30px
+    &-passage
+        text-align: center
+        line-height: 1.6
+        margin: 15px 0px 22px
+        +m()
+            white-space: pre-line
+    &-title 
+        background-color: $colorbase
+        color: white 
+        font-weight: 700 
+        @extend %__font23
+        display: flex 
+        align-items: center
+        justify-content: center
+        padding: 18px 20px
+        line-height: 1.4
+        +m()
+            font-size: 1.8rem
+            padding: 10px
+        img
+            margin-right: 15px
+            +m()
+                width: 35px
+    &-inner 
+        display: flex
+        align-items: center
+        +m()
+            display: block
+        &>* 
+            max-width: 50%
+            width: 100%
+            padding: 0px 20px
+            +m()
+                max-width: 100%
+    &-phone 
+        display: flex
+        align-items: flex-start
+        justify-content: center
+        position: relative
+        // border-right: 1px solid $colordefault
+        &::after
+            content: ''
+            top: 0px 
+            right: -0.5px 
+            width: 1px 
+            position: absolute
+            background-color: $colordefault
+            height: 100%
+        img 
+            margin-right: 18px
+            transform: translateY(-7%)
+        span 
+            display: block
+            // width: 100%
+            &.num 
+                @extend %__font40
+                font-weight: 700
+                color: black
+                line-height: 1
+                +m()
+                    font-size: 3rem
+            &.text
+                text-align: left
+                margin-top: 6px
+    &-email 
+        display: flex
+        justify-content: center
+        +m()
+            margin-top: 20px
+            .btn-email
+                svg
+                    width: 36px
+
+        

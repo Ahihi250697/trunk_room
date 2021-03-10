@@ -1,1 +1,46 @@
-.footer
+.footer 
+    padding-top: 35px 
+    border-top: 1px solid $colordefault
+    margin-top: 80px
+    &-logo 
+        font-weight: 700 
+        @extend %__font25 
+        line-height: 1
+        span
+            color: $colorbase
+    &-lineHead
+        display: flex
+        align-items: center 
+        justify-content: center
+        +m()
+            display: block
+        &>* 
+            &:not(:last-child) 
+                margin-right: 25px
+        p 
+            @extend %__font14
+            +m()
+                text-align: center
+    .copyright 
+        background-color: $colorbg
+        p 
+            text-align: center
+            @extend %__font14
+            padding: 15px 0px
+            line-height: 1
+            color: $colorbase
+    &-nav 
+        margin: 45px auto 35px
+        +m()
+            margin: 30px auto 0px
+        .nav-lists
+            +m()
+                display: block
+        .nav-list 
+            padding: 0px 30px
+            @extend %__font14
+            +m()
+                text-align: center
+                padding: 10px 20px
+                // &:last-of-type
+                //     border-bottom: 1px solid $colordefault

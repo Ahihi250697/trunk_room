@@ -7,6 +7,7 @@ const prettyhtml = require("gulp-format-html");
 const using = require('gulp-using');
 const plumber = require('gulp-plumber');
 const sass = require('gulp-sass');
+const webp = require('gulp-webp');
 
 const webpack = require('webpack');
 const gulpWebpack = require('webpack-stream');
@@ -23,7 +24,7 @@ const suit = require("postcss-bem-fix");
 
 sass.compiler = require('sass');
 
-let public = './public/',
+let public = './',
     src = './source/'
 
 gulp.task("browserSync", function () {
@@ -77,7 +78,7 @@ gulp.task("browserSync", function () {
           imagemin.mozjpeg({ quality: 75, progressive: true }),
           imagemin.optipng({ optimizationLevel: 5 }),
           imagemin.svgo({
-            plugins: [{ removeViewBox: true }, { cleanupIDs: false }],
+            plugins: [{ removeViewBox: false }, { cleanupIDs: false }],
           }),
         ])
       )

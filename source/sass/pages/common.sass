@@ -1,30 +1,41 @@
 @import ../Abstract/__variables
 @import ../Abstract/__extend
 @import ../Abstract/__mixin
+@import ../Layout/__common
 
 @font-face 
-    font-family: 'SourceHanSans-N'
-    src: url('../assets/fonts/SourceHanSans-Normal.otf')
+    font-family: 'Noto Sans CJK JP'
+    src: url('../assets/fonts/NotoSansCJKjp-Bold.otf')
+    font-weight: 700
+
+
 @font-face 
-    font-family: 'SourceHanSans-R'
-    src: url('../assets/fonts/SourceHanSans-Regular.otf')
+    font-family: 'Noto Sans CJK JP'
+    src: url('../assets/fonts/NotoSansCJKjp-Medium.otf')
+    font-weight: 500
+
+
 @font-face 
-    font-family: 'SourceHanSans-M'
-    src: url('../assets/fonts/SourceHanSans-Medium.otf')
-@font-face 
-    font-family: 'SourceHanSans-B'
-    src: url('../assets/fonts/SourceHanSans-Bold.otf')
+    font-family: 'Noto Sans CJK JP'
+    src: url('../assets/fonts/NotoSansCJKjp-Regular.otf')
+    font-weight: 400
+
 
 body 
-    font-family: 'SourceHanSans-N', "游ゴシック", "Yu Gothic", "游ゴシック体", 'YuGothic', sans-serif
+    font-family: 'Noto Sans CJK JP', "游ゴシック", "Yu Gothic", "游ゴシック体", 'YuGothic', sans-serif
     font-size: 1.6rem
     font-weight: 300 
+    color: #333333
+    font-weight: 400
     +m()
         font-size: 1.4rem
     main
         +CSSIE()
             overflow-x: hidden
+    .main 
+        padding-top: 145px
+        +m()
+            padding-top: 60px
             
 @import ../Layout/__header
 @import ../Layout/__footer
-@import ../Layout/__common
