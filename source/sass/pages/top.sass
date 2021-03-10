@@ -17,13 +17,22 @@
         margin: 0px auto
         border-radius: 2.5px
         margin-top: 15px
+        +m()
+            height: 3px 
+            border-radius: 1.5px
+            width: 80px
+            margin-top: 10px
     .text-title 
         @extend %__font30
         +m()
             font-size: 2.2rem
-
+.banner 
+    img 
+        width: 100%
 .noFee 
     padding-top: 70px
+    +m()
+        padding-top: 50px
     &-title 
         &::first-letter
             @extend %__font40
@@ -107,9 +116,29 @@
         position: absolute
         bottom: 0px
         z-index: -1
-
+.btn-arrow
+    height: 70px
+    max-width: 430px
+    margin: 45px auto 0px
+    justify-content: flex-end
+    padding-right: 40px
+    +m()
+        height: 50px
+        margin-top: 25px
+        padding-right: 0px
+        justify-content: center
+    span 
+        @extend %__font20
+        margin-right: 35px
+        +m()
+            font-size: 1.6rem
+            margin-right: 25px
+            padding-left: 35px
+        
 .storage
     position: relative
+    img 
+        width: 100%
     +m()
         // img 
         //     min-height: 300px
@@ -128,6 +157,7 @@
         text-align: center
         +m()
             font-size: 2rem
+            // white-space: pre-line
         &>span
             @extend %__font40 
             +m()
@@ -150,7 +180,7 @@
                 +m()
                     width: 5px 
                     height: 5px
-                    top: -5px
+                    top: -2px
         .text-orange 
             color: $colorOrange
             &::after
@@ -162,7 +192,8 @@
                     height: 15px
 .useTarget, .storage
     margin-top: 80px
-
+    +m()
+        margin-top: 50px
 .useTarget 
     &-lists 
         display: flex 
@@ -170,6 +201,7 @@
         margin-top: 50px
         +m()
             display: block
+            margin-top: 35px
     &-list 
         max-width: 240px 
         width: calc(100%/4 - 10px)
@@ -179,8 +211,17 @@
         +m()
             width: 100%
             max-width: 100%
+            display: flex
+            align-items: center
+            max-width: 580px
+            margin-right: auto 
+            margin-left: auto
+            &:not(:last-child)
+                margin-bottom: 25px
     &-img 
         position: relative 
+        // +m()
+        //     flex-shrink: 1
         .order 
             position: absolute
             z-index: 1 
@@ -206,6 +247,9 @@
         display: flex
         align-items: center
         justify-content: center
+        +m()
+            height: auto
+            display: block
 
 .sanadayama
     padding-top: 90px
@@ -256,83 +300,6 @@
         p 
             margin-top: 8px
 
-.support 
-    margin-top: 60px
-    &-board 
-        border-radius: 10px 
-        border: 2px solid $colorbase
-        padding-bottom: 30px
-    &-passage
-        text-align: center
-        line-height: 1.6
-        margin: 15px 0px 22px
-        +m()
-            white-space: pre-line
-    &-title 
-        background-color: $colorbase
-        color: white 
-        font-weight: 700 
-        @extend %__font23
-        display: flex 
-        align-items: center
-        justify-content: center
-        padding: 18px 20px
-        line-height: 1.4
-        +m()
-            font-size: 1.8rem
-            padding: 10px
-        img
-            margin-right: 15px
-            +m()
-                width: 35px
-    &-inner 
-        display: flex
-        align-items: center
-        +m()
-            display: block
-        &>* 
-            max-width: 50%
-            width: 100%
-            padding: 0px 20px
-            +m()
-                max-width: 100%
-    &-phone 
-        display: flex
-        align-items: flex-start
-        justify-content: center
-        position: relative
-        // border-right: 1px solid $colordefault
-        &::after
-            content: ''
-            top: 0px 
-            right: -0.5px 
-            width: 1px 
-            position: absolute
-            background-color: $colordefault
-            height: 100%
-        img 
-            margin-right: 18px
-            transform: translateY(-7%)
-        span 
-            display: block
-            // width: 100%
-            &.num 
-                @extend %__font40
-                font-weight: 700
-                color: black
-                line-height: 1
-                +m()
-                    font-size: 3rem
-            &.text
-                text-align: left
-                margin-top: 6px
-    &-email 
-        display: flex
-        justify-content: center
-        +m()
-            margin-top: 20px
-            .btn-email
-                svg
-                    width: 36px
+
 
         

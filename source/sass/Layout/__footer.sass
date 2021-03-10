@@ -1,11 +1,96 @@
+.support 
+    margin-top: 60px
+    &-board 
+        border-radius: 10px 
+        border: 2px solid $colorbase
+        padding-bottom: 30px
+    &-passage
+        text-align: center
+        line-height: 1.6
+        margin: 15px 0px 22px
+        +m()
+            white-space: pre-line
+    &-title 
+        background-color: $colorbase
+        color: white 
+        font-weight: 700 
+        @extend %__font23
+        display: flex 
+        align-items: center
+        justify-content: center
+        padding: 18px 20px
+        line-height: 1.4
+        +m()
+            font-size: 1.8rem
+            padding: 10px
+        img
+            margin-right: 15px
+            +m()
+                width: 35px
+    &-inner 
+        display: flex
+        align-items: center
+        +m()
+            display: block
+        &>* 
+            max-width: 50%
+            width: 100%
+            padding: 0px 20px
+            +m()
+                max-width: 100%
+    &-phone 
+        display: flex
+        align-items: flex-start
+        justify-content: center
+        position: relative
+        // border-right: 1px solid $colordefault
+        &::after
+            content: ''
+            top: 0px 
+            right: -0.5px 
+            width: 1px 
+            position: absolute
+            background-color: $colordefault
+            height: 100%
+        img 
+            margin-right: 18px
+            transform: translateY(-7%)
+        span 
+            display: block
+            // width: 100%
+            &.num 
+                @extend %__font40
+                font-weight: 700
+                color: black
+                line-height: 1
+                +m()
+                    font-size: 3rem
+            &.text
+                text-align: left
+                margin-top: 6px
+    &-email 
+        display: flex
+        justify-content: center
+        +m()
+            margin-top: 20px
+            .btn-email
+                svg
+                    width: 36px
+    
 .footer 
     padding-top: 35px 
     border-top: 1px solid $colordefault
     margin-top: 80px
+    +m()
+        margin-top: 60px
     &-logo 
         font-weight: 700 
         @extend %__font25 
         line-height: 1
+        +m()
+            display: table
+            margin-right: auto !important 
+            margin-left: auto
         span
             color: $colorbase
     &-lineHead
@@ -17,6 +102,9 @@
         &>* 
             &:not(:last-child) 
                 margin-right: 25px
+                +m()
+                    margin-right: 0px
+                    margin-bottom: 10px
         p 
             @extend %__font14
             +m()
@@ -29,6 +117,8 @@
             padding: 15px 0px
             line-height: 1
             color: $colorbase
+            +m()
+                line-height: 1.6
     &-nav 
         margin: 45px auto 35px
         +m()

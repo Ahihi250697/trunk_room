@@ -1,4 +1,26 @@
-
+#barNav 
+    display: none 
+    +m()
+        display: flex
+        align-items: center 
+        justify-content: center
+        position: relative
+        span
+            width: 65%
+            height: 4px 
+            border-radius: 2px 
+            background-color: #333333
+            position: absolute
+            transition: transform 0.3s ease
+            &:last-of-type
+                transform: translateY(12px) rotate(0deg)
+            &:first-of-type
+                transform: translateY(-12px) rotate(0deg)
+        &.active
+            span 
+                transform: translateY(0px) rotate(135deg)
+                &:last-of-type
+                    transform: translateY(12px) rotate(135deg)
 .header 
     position: fixed 
     top: 0px 
@@ -9,23 +31,7 @@
     +m()
         .cm-container
             padding-right: 0px
-        #barNav 
-            display: none 
-            +m()
-                display: flex
-                align-items: center 
-                justify-content: center
-                position: relative
-                span
-                    width: 30px 
-                    height: 4px 
-                    border-radius: 2px 
-                    background-color: #333333
-                    position: absolute
-                    &:last-of-type
-                        transform: translateY(12px)
-                    &:first-of-type
-                        transform: translateY(-12px)
+            padding-left: 10px
     &-wrap 
         padding: 15px 0px
         display: flex 
@@ -34,8 +40,13 @@
         +m()
             padding: 0px
     &-logo 
+        margin-right: 25px 
+        +m()
+            margin-right: 0px
         a 
+            flex-shrink: 0
             span 
+                white-space: nowrap
                 line-height: 1
                 &:first-child
                     @extend %__font13
@@ -49,12 +60,20 @@
                     @extend %__font20
                     +m()
                         font-size: 1.6rem
+                        font-size: clamp(1.2rem, 4.3vw, 2.2rem)
     &-contact 
         display: flex
-        justify-content: flex-end
+        justify-content: space-between
         font-weight: 700
+        max-width: 539px
+        align-items: center
+        width: 100%
+        flex-shrink: 1
+        max-width: clamp(400px, 64vw, 539px)
         +m()
-            align-items: center
+            justify-content: flex-end
+            max-width: unset 
+            width: auto
         &>* 
             display: flex 
             align-items: center
@@ -63,9 +82,12 @@
                 display: flex
                 height: 60px 
                 width: 60px !important
+                height: clamp(60px, 16vw, 75px) !important
+                width: clamp(55px, 16vw, 75px) !important
                 flex-direction: column
                 justify-content: space-between
                 padding: 6px 0px !important
+                padding: clamp(6px, 2vw, 15px) 0px !important
                     // align-items: 
         .forSp
             display: none 
@@ -77,6 +99,9 @@
                     display: none
     &-nav 
         padding: 15px 0px
+        .nav-list 
+            padding: 0px 55px
+            padding: 0px clamp(20px, 5vw, 55px)
         +m()
             // display: none
             position: absolute
@@ -91,15 +116,20 @@
                     display: block
                 &-list 
                     font-size: 1.6rem
-                    padding: 0px 50px !important
+                    padding: 0px !important
                     a 
-                        padding: 10px 0px 
+                        padding: 10px 50px 
+                        display: flex
+                        &::after
+                            content: ''
 
 .contact 
     &-phone 
         @extend %__font25
+        font-size: clamp(1.8rem, 2.6vw, 2.5rem)
         color: black
-        margin-right: 33px
+        margin-right: 15px
+        // margin-right: clamp(15px, 3vw, 33px)
         img
             margin-right: 14px
         +m()
@@ -108,6 +138,7 @@
         @extend %__font15
         padding: 14px 21px 
         max-width: 296px
+        // padding: 14px clamp(14px, 3vw, 21px)
         +m()
             border-radius: 0px !important
             font-size: 1.4rem
@@ -122,6 +153,7 @@
     &-local 
         display: none 
         @extend %__font14
+        font-size: clamp(1.2rem, 4vw, 1.4rem)
         +m()
             display: flex
             background-color: $colorbase
@@ -138,13 +170,10 @@
         &:not(:last-child) 
             border-right: 1px solid $colordefault
         +m()
-            border-right: none 
+            border-right: none !important
             border-top: 1px solid $colordefault
         a 
             line-height: 1.6
-.header-nav 
-    .nav-list 
-        padding: 0px 55px
 .btn-oran 
     background-color: $colorOrange
     width: 100% 
@@ -154,22 +183,6 @@
     border-radius: 10px
     span
         color: white
-.btn-arrow
-    height: 70px
-    max-width: 430px
-    margin: 45px auto 0px
-    justify-content: flex-end
-    padding-right: 40px
-    +m()
-        height: 50px
-        // padding-right: 25px
-    span 
-        @extend %__font20
-        margin-right: 35px
-        +m()
-            font-size: 1.6rem
-            // margin-right: 30px
-        
 .btn-email
     max-width: 420px 
     height: 80px 

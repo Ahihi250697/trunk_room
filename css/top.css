@@ -16,7 +16,7 @@
   }
 }
 
-.support-phone span.num, .storage-passage > span, .noFee-title::first-letter {
+.storage-passage > span, .noFee-title::first-letter {
   font-size: 4rem;
 }
 
@@ -28,11 +28,11 @@
   font-size: 2.5rem;
 }
 
-.support-title, .noFee-box:last-child .noFee-target {
+.noFee-box:last-child .noFee-target {
   font-size: 2.3rem;
 }
 
-.useTarget-img .order {
+.useTarget-img .order, .btn-arrow span {
   font-size: 2rem;
 }
 
@@ -61,13 +61,30 @@
   margin-top: 15px;
 }
 @media screen and (max-width: 767px) {
+  .style-h2 .line-under {
+    height: 3px;
+    border-radius: 1.5px;
+    width: 80px;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
   .style-h2 .text-title {
     font-size: 2.2rem;
   }
 }
 
+.banner img {
+  width: 100%;
+}
+
 .noFee {
   padding-top: 70px;
+}
+@media screen and (max-width: 767px) {
+  .noFee {
+    padding-top: 50px;
+  }
 }
 .noFee-title::first-letter {
   color: #00B5BB;
@@ -179,8 +196,37 @@
   z-index: -1;
 }
 
+.btn-arrow {
+  height: 70px;
+  max-width: 430px;
+  margin: 45px auto 0px;
+  justify-content: flex-end;
+  padding-right: 40px;
+}
+@media screen and (max-width: 767px) {
+  .btn-arrow {
+    height: 50px;
+    margin-top: 25px;
+    padding-right: 0px;
+    justify-content: center;
+  }
+}
+.btn-arrow span {
+  margin-right: 35px;
+}
+@media screen and (max-width: 767px) {
+  .btn-arrow span {
+    font-size: 1.6rem;
+    margin-right: 25px;
+    padding-left: 35px;
+  }
+}
+
 .storage {
   position: relative;
+}
+.storage img {
+  width: 100%;
 }
 .storage-content {
   position: absolute;
@@ -223,7 +269,7 @@
   .storage-passage .text-blue::before {
     width: 5px;
     height: 5px;
-    top: -5px;
+    top: -2px;
   }
 }
 .storage-passage .text-orange {
@@ -244,6 +290,11 @@
 .useTarget, .storage {
   margin-top: 80px;
 }
+@media screen and (max-width: 767px) {
+  .useTarget, .storage {
+    margin-top: 50px;
+  }
+}
 
 .useTarget-lists {
   display: flex;
@@ -253,6 +304,7 @@
 @media screen and (max-width: 767px) {
   .useTarget-lists {
     display: block;
+    margin-top: 35px;
   }
 }
 .useTarget-list {
@@ -266,6 +318,14 @@
   .useTarget-list {
     width: 100%;
     max-width: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 580px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .useTarget-list:not(:last-child) {
+    margin-bottom: 25px;
   }
 }
 .useTarget-img {
@@ -295,6 +355,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .useTarget-passage {
+    height: auto;
+    display: block;
+  }
 }
 
 .sanadayama {
@@ -362,115 +428,5 @@
 }
 .sanadayama-list p {
   margin-top: 8px;
-}
-
-.support {
-  margin-top: 60px;
-}
-.support-board {
-  border-radius: 10px;
-  border: 2px solid #00B5BB;
-  padding-bottom: 30px;
-}
-.support-passage {
-  text-align: center;
-  line-height: 1.6;
-  margin: 15px 0px 22px;
-}
-@media screen and (max-width: 767px) {
-  .support-passage {
-    white-space: pre-line;
-  }
-}
-.support-title {
-  background-color: #00B5BB;
-  color: white;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 18px 20px;
-  line-height: 1.4;
-}
-@media screen and (max-width: 767px) {
-  .support-title {
-    font-size: 1.8rem;
-    padding: 10px;
-  }
-}
-.support-title img {
-  margin-right: 15px;
-}
-@media screen and (max-width: 767px) {
-  .support-title img {
-    width: 35px;
-  }
-}
-.support-inner {
-  display: flex;
-  align-items: center;
-}
-@media screen and (max-width: 767px) {
-  .support-inner {
-    display: block;
-  }
-}
-.support-inner > * {
-  max-width: 50%;
-  width: 100%;
-  padding: 0px 20px;
-}
-@media screen and (max-width: 767px) {
-  .support-inner > * {
-    max-width: 100%;
-  }
-}
-.support-phone {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  position: relative;
-}
-.support-phone::after {
-  content: "";
-  top: 0px;
-  right: -0.5px;
-  width: 1px;
-  position: absolute;
-  background-color: #CCCCCC;
-  height: 100%;
-}
-.support-phone img {
-  margin-right: 18px;
-  transform: translateY(-7%);
-}
-.support-phone span {
-  display: block;
-}
-.support-phone span.num {
-  font-weight: 700;
-  color: black;
-  line-height: 1;
-}
-@media screen and (max-width: 767px) {
-  .support-phone span.num {
-    font-size: 3rem;
-  }
-}
-.support-phone span.text {
-  text-align: left;
-  margin-top: 6px;
-}
-.support-email {
-  display: flex;
-  justify-content: center;
-}
-@media screen and (max-width: 767px) {
-  .support-email {
-    margin-top: 20px;
-  }
-  .support-email .btn-email svg {
-    width: 36px;
-  }
 }
 /*# sourceMappingURL=sourcemap/top.css.map */

@@ -49,8 +49,7 @@ let lists = [
   ],
 ];
 
-module.exports = () => html`
-<>
+module.exports = () => html `
     <section class="noFee">
       <div class="cm-container">
       ${h2("noFee", "３つの費用が一切不要")}
@@ -74,18 +73,30 @@ module.exports = () => html`
       </div>
       <div class="storage">
         <figure class="Storage-img">
-          <img class="img-default" src="./images/top/img_storage.jpg" alt="収納場所"/>
+          <picture>
+          <source media="(max-width: 767px)" srcset="./images/top/img_storage_sp.jpg" />
+          <img src="./images/top/img_storage.jpg" alt="収納場所"/>
+          </picture>
+          
         </figure>
         <div class="storage-content">
-          <p class="storage-passage">トランクルーム真田山は<span class="text-blue">安</span>
-          <span class="text-blue">全</span>で
-          <span class="text-blue">安</span>
-          <span class="text-blue">心</span>できる<br><span class="maker text-orange">収納場所</span>を提案します</p>
+          <p class="storage-passage">
+            トランクルーム真田山は
+            <br />
+            <span class="text-blue">安</span>
+            <span class="text-blue">全</span>
+            で
+            <span class="text-blue">安</span>
+            <span class="text-blue">心</span>
+            できる
+            <br />
+            <span class="maker text-orange">収納場所</span>
+            を提案します
+          </p>
           <a href="#" class="a-default btn-oran btn-arrow">
-          <span>部屋の種類と料金を見る</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27"><path id="Path_10" data-name="Path 10" d="M13.5 0A13.5 13.5 0 1027 13.5 13.5 13.5 0 0013.5 0zm6.765 13.679L13.832 19.8a1.554 1.554 0 01-2.142-2.251l2.622-2.495H8.1a1.554 1.554 0 110-3.108h6.212l-2.622-2.5A1.553 1.553 0 1113.832 7.2l6.433 6.12a.248.248 0 010 .358z" fill="#fff"/></svg>
-          </a>
-        </div>
+            <span>部屋の種類と料金を見る</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27"><path id="Path_10" data-name="Path 10" d="M13.5 0A13.5 13.5 0 1027 13.5 13.5 13.5 0 0013.5 0zm6.765 13.679L13.832 19.8a1.554 1.554 0 01-2.142-2.251l2.622-2.495H8.1a1.554 1.554 0 110-3.108h6.212l-2.622-2.5A1.553 1.553 0 1113.832 7.2l6.433 6.12a.248.248 0 010 .358z" fill="#fff"/></svg>
+          </a></div>
       </div>
     </section>
     <section class="useTarget">
@@ -95,11 +106,17 @@ module.exports = () => html`
           ${dataUse.map(
             (text, index) => html`<li class="useTarget-list">
               <figure class="useTarget-img">
-                <img
-                  class="img-default"
-                  src="./images/top/img_purposes${index + 1}.jpg"
-                  alt="${text}"
-                />
+                <picture>
+                  <source
+                    media="(max-width:767px)"
+                    srcset="./images/top/img_purposes${index + 1}_sp.jpg"
+                  />
+                  <img
+                    class="img-default"
+                    src="./images/top/img_purposes${index + 1}.jpg"
+                    alt="${text}"
+                  />
+                </picture>
                 <span class="order">0${index + 1}</span>
               </figure>
               <p class="useTarget-passage">${text}</p>
@@ -155,5 +172,4 @@ module.exports = () => html`
       </div>
     </div>
     </section>
-    <//>
 `;
