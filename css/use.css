@@ -245,6 +245,10 @@
     max-width: calc(40% + 17px);
 }
 
+.security-box .security__img img {
+    width: 100%;
+}
+
 .security-box .security__content {
     width: 100%;
     max-width: calc(60% - 17px);
