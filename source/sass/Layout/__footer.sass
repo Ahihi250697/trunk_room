@@ -1,5 +1,7 @@
 .support 
     margin-top: 60px
+    +m()
+        margin-top: 45px
     &-board 
         border-radius: 10px 
         border: 2px solid $colorbase
@@ -78,12 +80,16 @@
             padding: 0px 10px
             span 
                 line-height: 1.4
+                font-size: clamp(1.8rem, 2.2vw, 2rem)
+                // text-align: center
+            svg
+                width: clamp(25px, 5vw, 44.5px)
+
         +m()
             margin-top: 20px
             .btn-email
                 svg
                     width: 36px
-    
 .footer 
     padding-top: 35px 
     border-top: 1px solid $colordefault
@@ -177,6 +183,7 @@
     left: 0px
     width: 100%
     padding: 10px 10px
+    padding: 10px clamp(5px, 2vw, 10px)
     display: none
     background-color: white
     z-index: 9
@@ -191,6 +198,7 @@
         max-width: 50%
         width: 100%
         padding: 0px 10px
+        padding: 0px clamp(5px, 2vw, 10px)
         .a-entry 
             max-width: 280px 
             width: 100%
@@ -202,10 +210,10 @@
             font-weight: bold
             border-radius: 10px
             height: 100%
-            padding: 4px 10px
+            padding: 3px 10px
             svg 
                 margin-right: 7px
-                margin-right: clamp(7px, 2vw, 20px)
+                margin-right: clamp(7px, 3vw, 20px)
     .entry 
         &-phone 
             .a-entry
@@ -213,3 +221,4 @@
         &-email 
             .a-entry
                 background-color: $colorOrange
+                font-size: clamp(1.2rem, 4vw, 1.4rem)

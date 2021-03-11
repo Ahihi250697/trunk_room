@@ -138,10 +138,10 @@ gulp.task("browserSync", function () {
       autoprefixer("last 2 versions", { cascade: false })
     ];
     return gulp
-      .src(src + "sass/Page/*.sass")
+      .src(src + "sass/pages/*.sass")
       .pipe(sass().on('error', sass.logError))
       .pipe(postcss(processors))
-      .pipe(prefix('last 2 versions'))
+      // .pipe(prefix('last 2 versions'))
       .pipe(gulp.dest(public + "css/"));
   });
   

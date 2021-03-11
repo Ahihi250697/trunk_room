@@ -29,14 +29,19 @@ body
     font-weight: 400
     +m()
         font-size: 1.4rem
-    main
-        +CSSIE()
-            overflow-x: hidden
     .main 
         padding-top: 145px
         +m()
             padding-top: 60px
             padding-top: clamp(60px, 16vw, 75px)
++mediaMin(768px)
+    html 
+        overflow-y: visible !important
++CSSIE()
+    .main 
+        display: block
+    body 
+        overflow-x: hidden
             
 @import ../Layout/__header
 @import ../Layout/__footer
