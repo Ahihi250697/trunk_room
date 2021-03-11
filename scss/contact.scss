@@ -10,7 +10,6 @@
 
 .lead {
     width: 100%;
-    padding-top: 67px;
     p {
         padding: 0 24%;
         font-size: 16px;
@@ -24,9 +23,8 @@
     width: 100%;
     padding: 3% 26.5%;
     margin-top: 26px;
-    border: 1px solid #00b5bb;
+    border: 2px solid #00b5bb;
     border-radius: 10px;
-    float: left;
     p {
         width: 100%;
         text-align: center;
@@ -53,15 +51,14 @@
         font-size: 20px;
         width: 100%;
         text-align: center;
-        float: left;
         margin-top: 25px;
         padding-bottom: 2px;
+        display: block;
     }
 }
 
 .form-contact {
     width: 100%;
-    float: left;
     margin-top: 34px;
     margin-bottom: 32px;
     .form-items {
@@ -206,16 +203,14 @@
     }
     .comfirm {
         width: 100%;
-        float: left;
         text-align: center;
         margin-top: 19px;
-        margin-bottom: 37px;
+        margin-bottom: 34px;
         letter-spacing: 0.8px;
         line-height: 29px;
     }
     .submit-form {
         width: 100%;
-        float: left;
         text-align: center;
         button {
             width: 300px;
@@ -224,20 +219,28 @@
             font-size: 16px;
             font-weight: 600;
             border-radius: 10px;
-            background: #EF8000;
+            background-color: #EF8000;
             color: #fff;
             position: relative;
+            border: 2px solid #EF8000;
+            transition: .3s ease;
+            cursor: pointer;
             &::after {
                 content: "";
-                background: #fff;
-                height: 3px;
+                height: 13px;
                 width: 13px;
-                top: 58%;
+                display: block;
+                border: 3px solid #fff;
+                border-top: 0;
+                border-left: 0;
+                top: 50%;
                 right: 19px;
                 position: absolute;
-                transform: translateY(-50%) rotate( -42deg);
+                transform: translateY(-50%) rotate( -45deg);
+                transition: .3s ease;
             }
             &::before {
+                display: none;
                 content: "";
                 background: #fff;
                 height: 3px;
@@ -246,6 +249,13 @@
                 position: absolute;
                 transform: translateY(-50%) rotate( 41deg);
                 right: 19px;
+            }
+            &:hover {
+                background-color: #FFF;
+                color: #ef8000;
+                &::after {
+                    border-color: #EF8000;
+                }
             }
         }
     }
