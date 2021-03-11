@@ -7,3 +7,7 @@ package.json
 webpack.config.js
 .eleventy.js
 .eleventyignore
+.css.map
+.map
+.vs
+.vscode
