@@ -73,10 +73,14 @@
 
 .what-you-need-for-contract {
     width: 100%;
-    max-width: 960px;
+    /* max-width: 100; */
     margin: 0 auto;
-    margin-bottom: 17px;
+    margin-bottom: 8px;
     justify-content: space-between;
+    margin-top: 50px;
+    padding: 7px 57px;
+    border-radius: 12px;
+    border: 2px solid #CCCCCC;
 }
 
 .what-you-need-for-contract .wyn-title {
@@ -239,6 +243,10 @@
 .security-box .security__img {
     width: 100%;
     max-width: calc(40% + 17px);
+}
+
+.security-box .security__img img {
+    width: 100%;
 }
 
 .security-box .security__content {
@@ -483,10 +491,7 @@
     }
 
     .what-you-need-for-contract {
-        margin-top: 50px;
-        padding: 10px;
-        border-radius: 12px;
-        border: 2px solid #CCCCCC;
+        padding: 20px 10px;
     }
 
     .what-you-need-for-contract .wyn-title {
