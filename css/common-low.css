@@ -19,7 +19,7 @@
 }
 
 .c-mainvisual {
-    min-height: 200px;
+    height: 200px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -292,7 +292,7 @@
         padding: 0 18px;
     }
     .c-mainvisual {
-        min-height: 100px;
+        height: 100px;
         margin-bottom: 17px;
     }
     .c-mainvisual .ttl {
