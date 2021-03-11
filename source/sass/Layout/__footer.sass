@@ -38,6 +38,7 @@
             padding: 0px 20px
             +m()
                 max-width: 100%
+                padding: 0px 10px
     &-phone 
         display: flex
         align-items: flex-start
@@ -63,14 +64,20 @@
                 font-weight: 700
                 color: black
                 line-height: 1
+                font-size: clamp(3rem, 4vw, 4rem)
                 +m()
                     font-size: 3rem
+                    font-size: clamp(2rem, 8.5vw, 3rem)
             &.text
                 text-align: left
                 margin-top: 6px
     &-email 
         display: flex
         justify-content: center
+        .btn-email 
+            padding: 0px 10px
+            span 
+                line-height: 1.4
         +m()
             margin-top: 20px
             .btn-email
@@ -105,11 +112,14 @@
                 margin-right: 25px
                 +m()
                     margin-right: 0px
-                    margin-bottom: 10px
+                    margin-bottom: 15px
         p 
             @extend %__font14
             +m()
                 text-align: center
+                &.tel
+                    // line-height: 1.6
+                    text-decoration: underline
     .copyright 
         background-color: $colorbg
         p 
@@ -121,18 +131,21 @@
             +m()
                 line-height: 1.6
     &-nav 
-        margin: 45px auto 35px
+        margin: 40px auto 30px
         +m()
-            margin: 30px auto 0px
+            margin: 25px auto 0px
         .nav-lists
+            flex-wrap: wrap
             +m()
                 display: block
         .nav-list 
             padding: 0px 30px
             @extend %__font14
+            margin: 5px 0px
             +m()
                 text-align: center
                 padding: 10px 20px
+                margin: 0px
 
 #topPage
     position: fixed 
@@ -143,11 +156,13 @@
     visibility: hidden
     opacity: 0
     transition: all 0.3s ease 
+    width: auto 
+    width: clamp(55px, 6vw, 70px)
     &.active 
         visibility: visible
         opacity: 1
     +m()
-        width: 50px
+        width: 45px
         right: 20px
         bottom: 85px
     button
@@ -190,6 +205,7 @@
             padding: 4px 10px
             svg 
                 margin-right: 7px
+                margin-right: clamp(7px, 2vw, 20px)
     .entry 
         &-phone 
             .a-entry

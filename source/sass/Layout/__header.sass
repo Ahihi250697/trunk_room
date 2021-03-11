@@ -1,5 +1,6 @@
 #barNav 
     display: none 
+    cursor: pointer
     +m()
         display: flex
         align-items: center 
@@ -32,6 +33,17 @@
         .cm-container
             padding-right: 0px
             padding-left: 10px
+        +m()
+            .contact-email
+                border: none !important 
+                background-color: $colorOrange !important 
+                span 
+                    color: white !important 
+                svg 
+                    path 
+                        fill: white !important
+                &:hover
+                    opacity: 0.8
     &-wrap 
         padding: 15px 0px
         display: flex 

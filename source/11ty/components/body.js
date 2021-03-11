@@ -82,7 +82,7 @@ module.exports = () => html `
         <div class="storage-content">
           <p class="storage-passage">
             トランクルーム真田山は
-            <br />
+            <br class="break-sp" />
             <span class="text-blue">安</span>
             <span class="text-blue">全</span>
             で
