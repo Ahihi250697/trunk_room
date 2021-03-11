@@ -947,8 +947,8 @@ body .main {
         font-size: clamp(2rem, 8.5vw, 3rem);
     }
     .support-email {
-        padding-top: 15px;
-        margin-top: 15px;
+        padding-top: 20px;
+        margin-top: 20px;
         border-top: 1px solid #ccc;
     }
 
