@@ -194,6 +194,7 @@
     opacity: 0.8;
 }
 
+/* 
 .banner-area {
     width: 100%;
     position: relative;
@@ -241,7 +242,7 @@
 
 .breadcrum .icon.icon--house {
     width: 23.45px;
-}
+} */
 
 .cm-lead {
     text-align: center;
@@ -285,61 +286,76 @@
     .pc {
         display: none;
     }
+
     .sp {
         display: block;
     }
+
     .l-container {
         padding: 0 18px;
     }
+
     .c-mainvisual {
         min-height: 100px;
         margin-bottom: 17px;
     }
+
     .c-mainvisual .ttl {
         font-size: 1.8rem;
         padding: 0px 20px 2px 20px;
     }
+
     .c-topic {
         padding-left: 44px;
         margin-bottom: 15px;
     }
+
     .c-topic li {
         font-size: 1.2rem;
         margin-right: 20px;
     }
+
     .c-topic::before {
         width: 17px;
         height: 16px;
         left: 23px;
         top: -3px;
     }
+
     .c-topic li a::after {
         width: 6px;
         height: 9px;
         right: -16px;
     }
+
     .c-title01 {
         font-size: 1.9rem;
         padding-bottom: 21px;
         margin-bottom: 19px;
     }
+
     .c-title01::before {
         width: 28px;
         height: 2px;
     }
+
     .c-title01::after {
         width: 28px;
         height: 2px;
     }
+
     .c-anchor {
         margin-bottom: 44px;
     }
+
     .c-anchor ul {
         padding: 0 10px;
     }
+
     .c-anchor li {
         width: calc(33.3% - 8px);
     }
+
     .c-anchor a {
         border: 1px solid #00B5BB;
         border-radius: 5px;
@@ -347,11 +363,13 @@
         min-height: 35px;
         font-size: 1.2rem;
     }
+
     .c-anchor a::after {
         width: 10px;
         height: 10px;
         right: 6px;
     }
+
     .c-btncontact {
         padding: 14px 10px 14px 12px;
         border-radius: 5px;
@@ -362,10 +380,12 @@
         transition: 0.5s;
         max-width: 225px;
     }
+
     .c-btncontact span {
         padding-left: 30px;
         position: relative;
     }
+
     .c-btncontact span::before {
         width: 22px;
         height: 16px;
