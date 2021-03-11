@@ -345,13 +345,12 @@
     margin-top: 8px;
 }
 
-@media screen and (max-width: 767px) and (max-width: 767px) {
+
+@media screen and (max-width: 767px) {
     .noFee-boxs {
         margin-top: 40px;
     }
-}
 
-@media screen and (max-width: 767px) {
     .noFee-zero .wrapNum .zero {
         font-size: 6rem;
     }
@@ -464,7 +463,7 @@
         display: block;
         width: auto;
         padding: 0 20px;
-        padding: 0 clamp(10px, 3vw, 20px);
+        padding: 0 clamp(10px, 3vw, 30px);
         text-align: left;
     }
     .sanadayama {
