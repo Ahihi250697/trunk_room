@@ -310,10 +310,16 @@ body .main {
     align-items: center;
     border-radius: 10px;
     border: 2px solid #ef8000;
+    transition: all 0.3s ease;
 }
 
 .btn-oran span {
     color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-oran svg path {
+    transition: all 0.3s ease;
 }
 
 .btn-oran:hover {
