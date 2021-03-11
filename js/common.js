@@ -2,9 +2,11 @@ $('#barNav').on('click', function(){
     if(!$(this).is('.active')){
         $(this).addClass('active');
         $('.header-nav').addClass('active');
+        $('html').css('overflow', 'hidden');
     }else{
         $(this).removeClass('active');
         $('.header-nav').removeClass('active');
+        $('html').css('overflow', 'visible');
     }
     
 })
@@ -26,8 +28,10 @@ window.addEventListener('scroll', function(){
     if(getScrollTop() > 0) {
         $('#topPage').addClass('active');
         $('.btn-entySp').addClass('active');
+        $('.header').addClass('active');
     }else{
         $('#topPage').removeClass('active');
         $('.btn-entySp').removeClass('active');
+        $('.header').removeClass('active');
     }
 })

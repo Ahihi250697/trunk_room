@@ -26,7 +26,6 @@
     justify-content: center;
     background: url(../images/price/img_mv01.png) no-repeat center;
     margin-bottom: 23px;
-    margin-top: 148px;
 }
 
 .c-mainvisual .ttl {
@@ -304,7 +303,6 @@
     .c-mainvisual {
         height: 100px;
         margin-bottom: 17px;
-        margin-top: 75px;
     }
     .c-mainvisual .ttl {
         font-size: 1.8rem;
@@ -384,12 +382,6 @@
     }
     .cm-lead {
         font-size: 20px;
-    }
-}
-
-@media only screen and (max-width: 470px) {
-    .c-mainvisual {
-        margin-top: 16vw;
     }
 }
 
