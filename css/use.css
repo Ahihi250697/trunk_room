@@ -366,6 +366,50 @@
     margin-top: 66px;
 }
 
+.loaded {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1f1f1f;
+}
+
+.loaded::after {
+    content: "Loading...";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: #fff;
+    font-size: 30px;
+}
+
+.loaded::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    top: calc(50% - 80px);
+    left: calc(50% - 30px);
+    border-top-color: transparent;
+    animation: keyf_loading 0.5s linear 0s infinite both;
+}
+
+@keyframes keyf_loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 @media only screen and (max-width: 1024px) {
     .ggmaps iframe {
         width: 100%;
