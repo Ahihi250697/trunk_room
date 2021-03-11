@@ -310,10 +310,16 @@ body .main {
     align-items: center;
     border-radius: 10px;
     border: 2px solid #ef8000;
+    transition: all 0.3s ease;
 }
 
 .btn-oran span {
     color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-oran svg path {
+    transition: all 0.3s ease;
 }
 
 .btn-oran:hover {
@@ -502,7 +508,7 @@ body .main {
 }
 
 .footer-nav {
-    margin: 40px auto 30px;
+    margin: 40px auto 35px;
 }
 
 .footer-nav .nav-lists {
@@ -941,8 +947,8 @@ body .main {
         font-size: clamp(2rem, 8.5vw, 3rem);
     }
     .support-email {
-        padding-top: 15px;
-        margin-top: 15px;
+        padding-top: 20px;
+        margin-top: 20px;
         border-top: 1px solid #ccc;
     }
 
