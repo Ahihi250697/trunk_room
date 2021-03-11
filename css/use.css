@@ -1,15 +1,8 @@
-<<<<<<< HEAD
 img {
-=======
-/* .use-area img {
     width: 100%;
-} */
-/* .use-area:not(.support img) {
->>>>>>> b3360c75186746c2ddc89d9b6bcab07e9af216e9
-    width: 100%;
-} */
+}
 
-.step-box .step-box__heading {
+*/ .step-box .step-box__heading {
     font-weight: 700;
 }
 
