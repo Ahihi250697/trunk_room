@@ -13,7 +13,7 @@
   padding-top: 67px;
 }
 .lead p {
-  padding: 0 25%;
+  padding: 0 24%;
   font-size: 16px;
   line-height: 30px;
   text-align: center;
@@ -62,7 +62,7 @@
 .form-contact {
   width: 100%;
   float: left;
-  margin-top: 32px;
+  margin-top: 34px;
   margin-bottom: 32px;
 }
 .form-contact .form-items {
@@ -77,6 +77,7 @@
   border-top: 0;
 }
 .form-contact .form-items.last-form {
+  padding-top: 20px;
   align-items: flex-start;
 }
 .form-contact .form-items.last-form .tag {
@@ -84,9 +85,26 @@
 }
 .form-contact .form-items.items_9 {
   align-items: flex-start;
+  padding-top: 14px;
 }
 .form-contact .form-items.items_9 .tag {
   margin-top: 5px;
+}
+.form-contact .form-items.items_4 {
+  padding-top: 20px;
+}
+.form-contact .form-items.items_5 {
+  padding-top: 17px;
+}
+.form-contact .form-items.items_6 {
+  padding-bottom: 16px;
+  padding-top: 14px;
+}
+.form-contact .form-items.items_7 {
+  padding-bottom: 18px;
+}
+.form-contact .form-items.items_8 {
+  padding-top: 15px;
 }
 .form-contact .form-items .tag {
   width: 100%;
@@ -100,6 +118,7 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   font-weight: 600;
+  margin-top: 5px;
 }
 .form-contact .form-items .tag .tag-type {
   float: right;
@@ -125,6 +144,7 @@
   border: 1px solid #AAA;
   background: #F9F9F9;
   border-radius: 4px;
+  margin-top: -2px;
 }
 .form-contact .form-items .input-form input {
   width: 100%;
@@ -142,6 +162,8 @@
 .form-contact .form-items .input-form p {
   width: 100%;
   font-size: 16px;
+  letter-spacing: 0.8px;
+  margin-bottom: 4px;
 }
 .form-contact .form-items .input-form .line-icon {
   color: #EF8000;
@@ -176,7 +198,7 @@
   border-radius: 4px;
 }
 .form-contact .form-items .input-form .icon-form {
-  margin-top: 10px;
+  margin-top: 27px;
 }
 .form-contact .form-items .input-form .icon-form input[type=checkbox] {
   background: #AAA;
@@ -236,11 +258,39 @@
     padding: 0;
   }
 
+  .contact p {
+    max-width: 375px;
+    margin: auto;
+  }
+
   .form-contact {
     margin-top: 25px;
   }
+  .form-contact .form-items.items_9 {
+    align-items: flex-start;
+    padding-top: 14px;
+  }
+  .form-contact .form-items.items_9 .tag {
+    margin-top: 5px;
+  }
+  .form-contact .form-items.items_4 {
+    padding-top: 18px;
+  }
+  .form-contact .form-items.items_5 {
+    padding-top: 18px;
+  }
+  .form-contact .form-items.items_6 {
+    padding-bottom: 20px;
+    padding-top: 18px;
+  }
+  .form-contact .form-items.items_7 {
+    padding-bottom: 20px;
+  }
+  .form-contact .form-items.items_8 {
+    padding-top: 18px;
+  }
   .form-contact .form-items .tag {
-    max-width: 35%;
+    max-width: 38%;
     margin-bottom: 10px;
     padding-right: 2%;
   }
@@ -269,6 +319,10 @@
   }
   .contact .contact-phone-number img {
     width: 65px;
+  }
+  .contact p {
+    max-width: 375px;
+    margin: auto;
   }
   .contact span {
     font-size: 18px;

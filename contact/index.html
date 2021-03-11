@@ -31,14 +31,13 @@
         <!-- #endregion -->
     </header>
     <main>
-        <!-- <div style="width: 100%;height: 340px;"></div> -->
+        <div style="width: 100%;height: 340px;"></div>
         <!-- #region: main -->
         <section class="request-contact">
             <div class="container container-form">
-
                 <div class="lead">
-                    <p>見学のご希望やご不明な点などございましたら、お気軽にご相談下さい。 お問い合わせ内容を入力いただいた後、「確認」ボタンを押してください。
-                    </p>
+                    <p>見学のご希望やご不明な点などございましたら、お気軽にご相談下さい。</p>
+                    <p>お問い合わせ内容を入力いただいた後、「確認」ボタンを押してください。</p>
                 </div>
                 <div class="contact">
                     <p>お電話でのお問い合わせ</p>
@@ -46,17 +45,21 @@
                     <span>受付時間：平日10:00～17:00までご連絡ください。</span>
                 </div>
                 <form class="form-contact">
-                    <div class="form-items">
+                    <div class="form-items items_1">
                         <div class="tag">
                             お問い合わせ内容選択
                             <span class="tag-type">必須</span>
                         </div>
                         <div class="input-form">
-                            <select name="" id=""><option value="選択してください" selected>選択してください</option></select>
+                            <select name="" id="">
+                                <option value="選択してください" selected>選択してください</option>
+                                <option value="お問い合わせ内容選択" >お問い合わせ内容選択</option>
+
+                            </select>
                         </div>
                     </div>
                     <!-- 1 -->
-                    <div class="form-items">
+                    <div class="form-items items_2">
                         <div class="tag">
                             氏名（姓）
                             <span class="tag-type">必須</span>
@@ -64,7 +67,7 @@
                         <div class="input-form"><input type="text"></div>
                     </div>
                     <!-- 2 -->
-                    <div class="form-items">
+                    <div class="form-items items_3">
                         <div class="tag">
                             氏名（名）
                             <span class="tag-type">必須</span>
@@ -72,7 +75,7 @@
                         <div class="input-form"><input type="text"></div>
                     </div>
                     <!-- 3 -->
-                    <div class="form-items">
+                    <div class="form-items items_4">
                         <div class="tag">
                             氏名（セイ）
                             <span class="tag-type">必須</span>
@@ -80,7 +83,7 @@
                         <div class="input-form"><input type="text"></div>
                     </div>
                     <!-- 4 -->
-                    <div class="form-items">
+                    <div class="form-items items_5">
                         <div class="tag">
                             氏名（カナ）
                             <span class="tag-type">必須</span>
@@ -88,7 +91,7 @@
                         <div class="input-form"><input type="text"></div>
                     </div>
                     <!-- 5 -->
-                    <div class="form-items">
+                    <div class="form-items items_6">
                         <div class="tag">
                             お電話番号
                             <span class="tag-type">必須</span>
@@ -96,7 +99,7 @@
                         <div class="input-form"><input type="text"></div>
                     </div>
                     <!-- 6 -->
-                    <div class="form-items">
+                    <div class="form-items items_7">
                         <div class="tag">
                             メールアドレス
                             <span class="tag-type">必須</span>
@@ -109,14 +112,22 @@
                             メールアドレス（確認用）
                             <span class="tag-type">必須</span>
                         </div>
-                        <div class="input-form">
-                            <textarea name="" id="" rows="14"></textarea>
-                        </div>
+                        <div class="input-form"><input type="text"></div>
                     </div>
                     <!-- 8 -->
-                    <div class="form-items last-form">
+                    <div class="form-items items_9">
                         <div class="tag">
                             ご意見・ご感想
+                            <span class="tag-type">必須</span>
+                        </div>
+                        <div class="input-form">
+                            <textarea name="" id="" rows="16"></textarea>
+                        </div>
+                    </div>
+                    <!-- 9 -->
+                    <div class="form-items last-form">
+                        <div class="tag">
+                            個人情報使用の同意
                             <span class="tag-type">必須</span>
                         </div>
                         <div class="input-form">
@@ -125,10 +136,9 @@
                             </p>
                             <p class="line-icon"> 個人情報の取り扱いについて</p>
                             <p class="icon-form"> <input type="checkbox" class="button-check-form" />同意する</p>
-
                         </div>
                     </div>
-                    <!-- 9 -->
+                    <!-- 10 -->
                     <p class="comfirm">
                         内容をご確認のうえ「確認画面はこちら」ボタンをクリックしてください。
                         <br/>つづいて、内容確認画面が表示されます。
@@ -136,9 +146,7 @@
                     <div class="submit-form">
                         <button>確認画面はこちら</button>
                     </div>
-
                 </form>
-
             </div>
         </section>
         <!-- #endregion -->
