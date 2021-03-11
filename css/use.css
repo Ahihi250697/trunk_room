@@ -1,6 +1,10 @@
-img {
+/* .use-area img {
+    width: 100%;
+} */
+.use-area:not(.support) img {
     width: 100%;
 }
+
 
 .step-box .step-box__heading {
     font-weight: 700;
@@ -412,7 +416,8 @@ img {
     }
 
     .security-box .security__img {
-        max-width: 100%;
+        max-width: calc(100% - 40px);
+        margin: 0 auto;
     }
 
     .security-box .security__content {
@@ -441,7 +446,15 @@ img {
         margin-right: 10px;
     }
 
+    .what-you-need-for-contract {
+        margin-top: 50px;
+        padding: 10px;
+        border-radius: 12px;
+        border: 2px solid #CCCCCC;
+    }
+
     .what-you-need-for-contract .wyn-title {
+        margin-top: 10px;
         justify-content: flex-start;
     }
 
