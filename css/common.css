@@ -269,6 +269,7 @@ body .main {
 .contact-email {
     padding: 14px 19px;
     max-width: 296px;
+    height: 50px;
 }
 
 .contact-email svg {
