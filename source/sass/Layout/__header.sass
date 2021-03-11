@@ -13,14 +13,14 @@
             position: absolute
             transition: transform 0.3s ease
             &:last-of-type
-                transform: translateY(12px) rotate(0deg)
+                transform: translateY(13px) rotate(0deg)
             &:first-of-type
-                transform: translateY(-12px) rotate(0deg)
+                transform: translateY(-13px) rotate(0deg)
         &.active
             span 
-                transform: translateY(0px) rotate(135deg)
+                transform: translateY(0px) rotate(45deg)
                 &:last-of-type
-                    transform: translateY(12px) rotate(135deg)
+                    transform: translateY(0px) rotate(135deg)
 .header 
     position: fixed 
     top: 0px 
@@ -102,14 +102,24 @@
         .nav-list 
             padding: 0px 55px
             padding: 0px clamp(20px, 5vw, 55px)
+            
+        .forSp
+            display: none 
+            +m()
+                display: block
         +m()
-            // display: none
             position: absolute
             padding: 0px
             top: 100% 
             left: 0px 
             width: 100%
             z-index: -1
+            height: 100vh
+            background-color: rgba(black, 0.6)
+            visibility: hidden
+            opacity: 0
+            transform: translateY(100px)
+            transition: all 0.3s ease
             .nav
                 &-lists 
                     background-color: $colorbg
@@ -117,11 +127,31 @@
                 &-list 
                     font-size: 1.6rem
                     padding: 0px !important
+                    &:hover
+                        background-color: $colorbase
+                        a 
+                            color: white
+                            &::after
+                                border-right: 2px solid white
+                                border-bottom: 2px solid white
                     a 
-                        padding: 10px 50px 
+                        padding: 10px 30px 
                         display: flex
+                        align-items: center 
+                        justify-content: space-between
                         &::after
                             content: ''
+                            display: block
+                            height: 10px
+                            width: 10px
+                            border-right: 2px solid $colorbase
+                            border-bottom: 2px solid $colorbase
+                            transform: rotate(-45deg)
+            &.active 
+                visibility: visible
+                opacity: 1
+                transform: translateY(0)
+
 
 .contact 
     &-phone 
@@ -136,20 +166,20 @@
             display: none !important
     &-email 
         @extend %__font15
-        padding: 14px 21px 
+        padding: 14px 19px 
         max-width: 296px
         // padding: 14px clamp(14px, 3vw, 21px)
         +m()
             border-radius: 0px !important
             font-size: 1.4rem
-        figure
+        svg
             // height: 22px
             width: 31px
             margin-right: 13px
             +m()
                 margin-right: 0px
-            svg 
-                width: 100%
+            // svg 
+            //     width: 100%
     &-local 
         display: none 
         @extend %__font14
@@ -181,8 +211,16 @@
     display: flex
     align-items: center 
     border-radius: 10px
+    border: 2px solid $colorOrange
     span
         color: white
+    &:hover
+        background-color: white
+        span
+            color: $colorOrange
+        svg 
+            path 
+                fill: $colorOrange
 .btn-email
     max-width: 420px 
     height: 80px 

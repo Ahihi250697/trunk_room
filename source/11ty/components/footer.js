@@ -1,31 +1,53 @@
-const { html } = require('htm/preact')
+const { html } = require("htm/preact");
 
-let nav = ['ホーム', 'サイズ＆料金案内', 'ご利用方法', '交通アクセス', '見学予約・お申込み', 'プライバシーポリシー', '運営会社']
+let nav = [
+  "ホーム",
+  "サイズ＆料金案内",
+  "ご利用方法",
+  "交通アクセス",
+  "見学予約・お申込み",
+  "プライバシーポリシー",
+  "運営会社",
+];
 
-module.exports = () =>html`
-<div class="cm-container">
+module.exports = () => html`
+  <div class="cm-container">
     <div class="footer-lineHead">
-        <a href="./" class="a-default a-hover footer-logo">
-            <span>トランクルーム真田山</span>
-        </a>
-        <p class="fax">〒543-0014　大阪市天王寺区玉造元町14-21</p>
-        <p class="tel">TEL：06-6761-3461</p>
+      <a href="./" class="a-default a-hover footer-logo">
+        <span>トランクルーム真田山</span>
+      </a>
+      <p class="fax">〒543-0014　大阪市天王寺区玉造元町14-21</p>
+      <p class="tel">TEL：06-6761-3461</p>
     </div>
     <nav class="footer-nav nav">
-        <ul class="nav-lists">
-            ${nav.map((text)=>html `<li class="nav-list">
-                <a href="#" class="a-default a-hover">${text}</a>
-            </li>
-            `)}
-        </ul>
+      <ul class="nav-lists">
+        ${nav.map(
+          (text) => html`<li class="nav-list">
+            <a href="#" class="a-default a-hover">${text}</a>
+          </li> `
+        )}
+      </ul>
     </nav>
-</div>
-<div class="copyright">
-<div class="cm-container">
-    <p>Copyright(c) トランクルーム真田山  All Rights Reserved.</p>
+  </div>
+  <div class="copyright">
+    <div class="cm-container">
+      <p>Copyright(c) トランクルーム真田山 All Rights Reserved.</p>
     </div>
-</div>
-<svg xmlns="http://www.w3.org/2000/svg" style="display:none" width="44.422" height="31.489" viewBox="0 0 44.422 31.489">
-    <path id="icon-email" data-name="Path 2" d="M39.242 74.535H5.181A5.18 5.18 0 000 79.715v21.129a5.18 5.18 0 005.181 5.18h34.061a5.18 5.18 0 005.181-5.18V79.715a5.18 5.18 0 00-5.181-5.18zm2.707 27.7l-.986 1.168-13.81-11.266-2.139 2.035a4.145 4.145 0 01-5.606 0l-2.139-2.035-13.809 11.27-.986-1.168 12.965-11.844L2.389 78.13l.772-1.022 19.05 14.435 19.051-14.435.771 1.022-13.05 12.265z" transform="translate(0 -74.535)" fill="#fff"/>
-</svg>
+  </div>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    style="display:none"
+    width="44.422"
+    height="31.489"
+    viewBox="0 0 44.422 31.489"
+  >
+    <path
+      id="icon-email"
+      data-name="Path 2"
+      d="M39.242 74.535H5.181A5.18 5.18 0 000 79.715v21.129a5.18 5.18 0 005.181 5.18h34.061a5.18 5.18 0 005.181-5.18V79.715a5.18 5.18 0 00-5.181-5.18zm2.707 27.7l-.986 1.168-13.81-11.266-2.139 2.035a4.145 4.145 0 01-5.606 0l-2.139-2.035-13.809 11.27-.986-1.168 12.965-11.844L2.389 78.13l.772-1.022 19.05 14.435 19.051-14.435.771 1.022-13.05 12.265z"
+      transform="translate(0 -74.535)"
+      fill="#fff"
+    />
+    <path id="icon-phone" data-name="Path 1" d="M23.5,0a23.5,23.5,0,0,0-.007,47h.058a8.694,8.694,0,0,0,5.963-2.074,6.53,6.53,0,0,0,2.176-4.841,6.458,6.458,0,0,0-.507-2.481,9.9,9.9,0,0,0,1.037-.683c.381-.271,1.469-1.723.706-2.918a25,25,0,0,0-4.237-4.379,2.116,2.116,0,0,0-2.58.865c-.6.877-1.072.614-1.072.614s-1.7-1.373-4.05-6.116-2.411-6.926-2.411-6.926.076-.537,1.137-.483a2.114,2.114,0,0,0,2.251-1.529,24.937,24.937,0,0,0-.918-6.022C20.56,8.7,18.747,8.683,18.3,8.822S13.249,10.08,12.883,14.9A24.615,24.615,0,0,0,15.54,27.688a24.605,24.605,0,0,0,8.565,9.86,6.215,6.215,0,0,0,4.543.979,3.752,3.752,0,0,1-.947,4.4A6.006,6.006,0,0,1,23.552,44.3H23.5a20.829,20.829,0,1,1,15.118-6.518,1.35,1.35,0,0,0,1.962,1.854A23.5,23.5,0,0,0,23.5,0Z" transform="translate(0 -0.002)" fill="white"/>
+  </svg>
 `;
