@@ -464,7 +464,7 @@
         display: block;
         width: auto;
         padding: 0 20px;
-        padding: 0 clamp(10px, 3vw, 20px);
+        padding: 0 clamp(10px, 3vw, 30px);
         text-align: left;
     }
     .sanadayama {

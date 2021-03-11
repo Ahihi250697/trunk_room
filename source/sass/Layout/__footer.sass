@@ -34,13 +34,14 @@
         align-items: center
         +m()
             display: block
+            padding: 0px 10px
         &>* 
             max-width: 50%
             width: 100%
             padding: 0px 20px
             +m()
                 max-width: 100%
-                padding: 0px 10px
+                padding: 0px
     &-phone 
         display: flex
         align-items: flex-start
@@ -55,6 +56,8 @@
             position: absolute
             background-color: $colordefault
             height: 100%
+            +m()
+                display: none
         img 
             margin-right: 18px
             transform: translateY(-7%)
@@ -86,7 +89,9 @@
                 width: clamp(25px, 5vw, 44.5px)
 
         +m()
-            margin-top: 20px
+            padding-top: 15px
+            margin-top: 15px
+            border-top: 1px solid $colordefault
             .btn-email
                 svg
                     width: 36px
