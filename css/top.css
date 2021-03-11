@@ -132,6 +132,10 @@
     margin-bottom: 30px;
   }
 }
+.noFee-box:last-child .noFee-target {
+  font-size: clamp(1.9rem, 2vw, 2.3rem);
+  line-height: 1.3;
+}
 .noFee-box:last-child .noFee-target img {
   margin-right: 11px;
 }
@@ -168,6 +172,7 @@
   color: #00B5BB;
   height: 70px;
   background-color: #E5FEFF;
+  padding: 0px 20px;
 }
 @media screen and (max-width: 767px) {
   .noFee-target {
@@ -227,6 +232,15 @@
 }
 .storage img {
   width: 100%;
+  min-height: 340px;
+  object-fit: cover;
+  object-position: center;
+}
+@media screen and (max-width: 767px) {
+  .storage img {
+    object-fit: unset;
+    min-height: 0px;
+  }
 }
 .storage-content {
   position: absolute;
@@ -331,6 +345,13 @@
 .useTarget-img {
   position: relative;
 }
+@media screen and (max-width: 767px) {
+  .useTarget-img {
+    max-width: 240px;
+    width: 39vw;
+    min-width: 85px;
+  }
+}
 .useTarget-img .order {
   position: absolute;
   z-index: 1;
@@ -360,6 +381,9 @@
   .useTarget-passage {
     height: auto;
     display: block;
+    width: auto;
+    padding: 0px 20px;
+    text-align: left;
   }
 }
 
@@ -413,6 +437,17 @@
 }
 .sanadayama-list figure {
   margin-right: 20px;
+  flex-shrink: 0;
+}
+@media screen and (max-width: 767px) {
+  .sanadayama-list figure {
+    max-width: 130px;
+    width: 30vw;
+    min-width: 90px;
+  }
+  .sanadayama-list figure img {
+    width: 100%;
+  }
 }
 .sanadayama-list h3 {
   font-weight: 700;

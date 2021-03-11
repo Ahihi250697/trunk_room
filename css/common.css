@@ -44,6 +44,15 @@ img {
   outline: none;
 }
 
+.break-sp {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .break-sp {
+    display: inherit;
+  }
+}
+
 .btn-default {
   border: none;
   background-color: rgba(255, 255, 255, 0);
@@ -131,6 +140,7 @@ body .main {
 
 #barNav {
   display: none;
+  cursor: pointer;
 }
 @media screen and (max-width: 767px) {
   #barNav {
@@ -173,6 +183,21 @@ body .main {
   .header .cm-container {
     padding-right: 0px;
     padding-left: 10px;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  .header .contact-email {
+    border: none !important;
+    background-color: #EF8000 !important;
+  }
+  .header .contact-email span {
+    color: white !important;
+  }
+  .header .contact-email svg path {
+    fill: white !important;
+  }
+  .header .contact-email:hover {
+    opacity: 0.8;
   }
 }
 .header-wrap {
@@ -504,6 +529,7 @@ body .main {
 @media screen and (max-width: 767px) {
   .support-inner > * {
     max-width: 100%;
+    padding: 0px 10px;
   }
 }
 .support-phone {
@@ -532,10 +558,12 @@ body .main {
   font-weight: 700;
   color: black;
   line-height: 1;
+  font-size: clamp(3rem, 4vw, 4rem);
 }
 @media screen and (max-width: 767px) {
   .support-phone span.num {
     font-size: 3rem;
+    font-size: clamp(2rem, 8.5vw, 3rem);
   }
 }
 .support-phone span.text {
@@ -545,6 +573,12 @@ body .main {
 .support-email {
   display: flex;
   justify-content: center;
+}
+.support-email .btn-email {
+  padding: 0px 10px;
+}
+.support-email .btn-email span {
+  line-height: 1.4;
 }
 @media screen and (max-width: 767px) {
   .support-email {
@@ -596,12 +630,15 @@ body .main {
 @media screen and (max-width: 767px) {
   .footer-lineHead > *:not(:last-child) {
     margin-right: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 }
 @media screen and (max-width: 767px) {
   .footer-lineHead p {
     text-align: center;
+  }
+  .footer-lineHead p.tel {
+    text-decoration: underline;
   }
 }
 .footer .copyright {
@@ -619,12 +656,15 @@ body .main {
   }
 }
 .footer-nav {
-  margin: 45px auto 35px;
+  margin: 40px auto 30px;
 }
 @media screen and (max-width: 767px) {
   .footer-nav {
-    margin: 30px auto 0px;
+    margin: 25px auto 0px;
   }
+}
+.footer-nav .nav-lists {
+  flex-wrap: wrap;
 }
 @media screen and (max-width: 767px) {
   .footer-nav .nav-lists {
@@ -633,11 +673,13 @@ body .main {
 }
 .footer-nav .nav-list {
   padding: 0px 30px;
+  margin: 5px 0px;
 }
 @media screen and (max-width: 767px) {
   .footer-nav .nav-list {
     text-align: center;
     padding: 10px 20px;
+    margin: 0px;
   }
 }
 
@@ -650,6 +692,8 @@ body .main {
   visibility: hidden;
   opacity: 0;
   transition: all 0.3s ease;
+  width: auto;
+  width: clamp(55px, 6vw, 70px);
 }
 #topPage.active {
   visibility: visible;
@@ -657,7 +701,7 @@ body .main {
 }
 @media screen and (max-width: 767px) {
   #topPage {
-    width: 50px;
+    width: 45px;
     right: 20px;
     bottom: 85px;
   }
@@ -711,6 +755,7 @@ body .main {
 }
 .btn-entySp > * .a-entry svg {
   margin-right: 7px;
+  margin-right: clamp(7px, 2vw, 20px);
 }
 .btn-entySp .entry-phone .a-entry {
   background-color: #00B5BB;
