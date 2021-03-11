@@ -1,8 +1,12 @@
-img {
+/* .use-area img {
+    width: 100%;
+} */
+.use-area:not(.support) img {
     width: 100%;
 }
 
-*/ .step-box .step-box__heading {
+
+.step-box .step-box__heading {
     font-weight: 700;
 }
 
@@ -77,21 +81,17 @@ img {
 
 .what-you-need-for-contract {
     width: 100%;
-    /* max-width: 100; */
+    max-width: 960px;
     margin: 0 auto;
-    margin-bottom: 8px;
+    margin-bottom: 17px;
     justify-content: space-between;
-    margin-top: 50px;
-    padding: 7px 57px;
-    border-radius: 12px;
-    border: 2px solid #CCCCCC;
 }
 
 .what-you-need-for-contract .wyn-title {
     width: 100%;
     text-align: center;
     font-size: 20px;
-    /* margin-top: 59px; */
+    margin-top: 59px;
 }
 
 .what-you-need-for-contract .wyn-title .icon.icon-note {
@@ -249,10 +249,6 @@ img {
     max-width: calc(40% + 17px);
 }
 
-.security-box .security__img img {
-    width: 100%;
-}
-
 .security-box .security__content {
     width: 100%;
     max-width: calc(60% - 17px);
@@ -362,6 +358,50 @@ img {
     margin-top: 66px;
 }
 
+.loaded {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1f1f1f;
+}
+
+.loaded::after {
+    content: "Loading...";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: #fff;
+    font-size: 30px;
+}
+
+.loaded::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    top: calc(50% - 80px);
+    left: calc(50% - 30px);
+    border-top-color: transparent;
+    animation: keyf_loading 0.5s linear 0s infinite both;
+}
+
+@keyframes keyf_loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 @media only screen and (max-width: 1024px) {
     .ggmaps iframe {
         width: 100%;
@@ -374,40 +414,56 @@ img {
         font-size: 20px;
         padding-left: 10px;
     }
-    .security-box .security__img {
-        max-width: calc(100% - 40px);
-        margin: 0 auto;
+
+    .step-box .step-box__heading {
+        font-size: 16px;
     }
+
+    .step-box .step-box__heading .step-order {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
     .payment-method {
         flex-wrap: wrap;
     }
+
     .payment-method .method-block {
         max-width: 100%;
         margin-top: 41px;
     }
+
     .payment-method .method-block .method__title .icon.icon-note {
         margin-right: 10px;
     }
+
     .payment-method .method-block .method__method {
         margin-top: 20px;
         height: auto;
         align-items: center;
     }
+
     .payment-method .method-block .method__method .btn-method-tag {
         border-radius: 6px;
     }
+
     .payment-method .method-block .method__method .label-method {
         font-size: 16px;
     }
+
     .payment-method .method-block .method__method .label-method.label-nor {
         transform: translate(0, 0);
     }
+
     .payment-method .method-block .method__desc {
         padding: 20px 10px;
     }
+
     .security-box .security__img {
-        max-width: 100%;
+        max-width: calc(100% - 40px);
+        margin: 0 auto;
     }
+
     .security-box .security__content {
         max-width: 100%;
         padding-left: 0px;
@@ -420,46 +476,50 @@ img {
         border-radius: 6px;
         padding: 10px;
     }
+
     .traffic-list {
         border-radius: 6px;
         padding: 10px;
     }
+
     .traffic-list .traffic-type .traffic__by .icon.icon-train {
         margin-right: 10px;
     }
+
     .traffic-list .traffic-type .traffic__by .icon.icon-oto {
         margin-right: 10px;
     }
+
     .what-you-need-for-contract {
-        padding: 20px 10px;
+        margin-top: 50px;
+        padding: 10px;
+        border-radius: 12px;
+        border: 2px solid #CCCCCC;
     }
+
     .what-you-need-for-contract .wyn-title {
         margin-top: 10px;
         justify-content: flex-start;
     }
+
     .what-you-need-for-contract .wyn-title .icon.icon-note {
         margin-right: 10px;
     }
+
     .what-you-need-for-contract .wyn-item {
         max-width: 100%;
     }
-    .what-you-need-for-contract .wyn-title {
-        justify-content: flex-start;
-    }
-    .what-you-need-for-contract .wyn-title .icon.icon-note {
-        margin-right: 10px;
-    }
-    .what-you-need-for-contract .wyn-item {
-        max-width: 100%;
-    }
+
     .what-you-need-for-contract .wyn__license .icon.icon-card,
     .what-you-need-for-contract .wyn__seal .icon.icon-card {
         margin-right: 10px;
     }
+
     .what-you-need-for-contract .wyn__license .icon.icon-seal,
     .what-you-need-for-contract .wyn__seal .icon.icon-seal {
         margin-right: 10px;
     }
+
     .payment-method .method-block .method__method .btn-method-tag {
         width: calc(100% - 20px);
         border-radius: 6px;
