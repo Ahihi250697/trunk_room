@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33.742" height="35.78" viewBox="0 0 33.742 35.78">
+  <g id="シンプルな署名契約アイコン" transform="translate(-14.584)">
+    <rect id="Rectangle_60" data-name="Rectangle 60" width="8.193" height="1.525" transform="translate(20.734 27.546)" fill="#333"/>
+    <rect id="Rectangle_61" data-name="Rectangle 61" width="11.203" height="1.525" transform="translate(20.734 21.362)" fill="#333"/>
+    <rect id="Rectangle_62" data-name="Rectangle 62" width="15.959" height="1.525" transform="translate(20.734 15.179)" fill="#333"/>
+    <rect id="Rectangle_63" data-name="Rectangle 63" width="7.522" height="1.525" transform="translate(29.171 8.996)" fill="#333"/>
+    <path id="Path_42" data-name="Path 42" d="M41.012,32.526a1.426,1.426,0,0,1-1.424,1.424H17.838a1.426,1.426,0,0,1-1.424-1.424V12.3h8.7a1.748,1.748,0,0,0,1.745-1.746V1.83H39.588a1.425,1.425,0,0,1,1.424,1.423V13.53l1.83-1.83V3.253A3.257,3.257,0,0,0,39.588,0h-13.2a3.572,3.572,0,0,0-2.527,1.046L15.631,9.279a3.573,3.573,0,0,0-1.047,2.528v20.72a3.257,3.257,0,0,0,3.254,3.254H39.588a3.257,3.257,0,0,0,3.254-3.254v-8.75l-1.83,1.83v6.92ZM25.237,2.26V9.574c0,.791-.308,1.1-1.1,1.1H16.824Z" transform="translate(0)" fill="#333"/>
+    <path id="Path_43" data-name="Path 43" d="M434.961,177.554l-1.94-1.94a.864.864,0,0,0-1.222,0l-1.258,1.258,3.163,3.162,1.257-1.258A.864.864,0,0,0,434.961,177.554Z" transform="translate(-386.889 -163.106)" fill="#333"/>
+    <path id="Path_44" data-name="Path 44" d="M248.547,364.632l-1.078,4.241,4.241-1.078Z" transform="translate(-216.61 -339.15)" fill="#333"/>
+    <path id="Path_45" data-name="Path 45" d="M272.152,215.7l3.163,3.162,10.494-10.493-3.163-3.163Zm11.716-7.834-9.143,9.143-.719-.719,9.143-9.143Z" transform="translate(-239.568 -190.867)" fill="#333"/>
+  </g>
+</svg>
