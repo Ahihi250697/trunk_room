@@ -34,13 +34,13 @@
     border-top: none;
 }
 
-.c-tbl01 table tr:nth-child(2) th:first-child,
-.c-tbl01 table tr:nth-child(2) td:first-child {
+.c-tbl01 table tr th:first-child,
+.c-tbl01 table tr td:first-child {
     border-right: none;
 }
 
-.c-tbl01 table tr:nth-child(2) th:nth-child(2),
-.c-tbl01 table tr:nth-child(2) td:nth-child(2) {
+.c-tbl01 table tr th:nth-child(2),
+.c-tbl01 table tr td:nth-child(2) {
     border-left: none;
 }
 
@@ -238,7 +238,7 @@
         padding: 0 18px;
     }
     .c-mainvisual {
-        min-height: 100px;
+        height: 100px;
         margin-bottom: 17px;
     }
     .c-mainvisual .ttl {
@@ -427,6 +427,3 @@
         padding: 18px 55px 10px 65px;
     }
 }
-
-
-/*# sourceMappingURL=price.css.map */
