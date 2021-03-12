@@ -421,6 +421,9 @@
     .storage-passage > span {
         font-size: 2.4rem;
     }
+    .storage-passage:last-of-type {
+        letter-spacing: 0.1rem;
+    }
     .storage-passage .text-blue::before {
         width: 5px;
         height: 5px;
