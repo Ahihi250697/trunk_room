@@ -924,6 +924,11 @@ body .main {
     }
     .support-passage {
         white-space: pre-line;
+        text-align: left;
+        padding: 0px 20px;
+    }
+    .support-phone img{
+        transform: translateY(-15%);
     }
     .support-title {
         font-size: 1.8rem;
