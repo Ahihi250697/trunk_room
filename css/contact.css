@@ -429,6 +429,7 @@
     }
     .contact-frm .contact-phone-number img {
         width: 55px;
+        height: 26px;
     }
     .contact-frm p {
         max-width: 375px;
