@@ -307,7 +307,7 @@
     text-align: center;
 }
 
-.form-contact .submit-form button {
+.form-contact .submit-form .button {
     width: 300px;
     padding: 22px 10px;
     border: unset;
@@ -320,9 +320,11 @@
     border: 2px solid #EF8000;
     transition: 0.3s ease;
     cursor: pointer;
+    display: block;
+    margin: auto;
 }
 
-.form-contact .submit-form button::after {
+.form-contact .submit-form .button::after {
     content: "";
     height: 13px;
     width: 13px;
@@ -337,7 +339,7 @@
     transition: 0.3s ease;
 }
 
-.form-contact .submit-form button::before {
+.form-contact .submit-form .button::before {
     display: none;
     content: "";
     background: #fff;
@@ -349,12 +351,12 @@
     right: 19px;
 }
 
-.form-contact .submit-form button:hover {
+.form-contact .submit-form .button:hover {
     background-color: #FFF;
     color: #ef8000;
 }
 
-.form-contact .submit-form button:hover::after {
+.form-contact .submit-form .button:hover::after {
     border-color: #EF8000;
 }
 
@@ -412,6 +414,7 @@
 @media only screen and (max-width: 768px) {
     .lead {
         padding-top: 25px;
+        text-emphasis: left;
     }
     .lead p {
         padding: 0;
@@ -429,6 +432,10 @@
     .contact-frm p {
         max-width: 375px;
         margin: auto;
+        text-align: left;
+    }
+    .form-contact .comfirm {
+        text-align: left;
     }
     .contact-frm span {
         font-size: 18px;
