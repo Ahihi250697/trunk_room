@@ -322,6 +322,7 @@
     cursor: pointer;
     display: block;
     margin: auto;
+    max-width: 100%;
 }
 
 .form-contact .submit-form .button::after {
