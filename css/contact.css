@@ -418,6 +418,7 @@
     }
     .lead p {
         padding: 0;
+        text-align: left;
     }
     .contact-frm {
         padding: 3%;
@@ -440,6 +441,7 @@
     .contact-frm span {
         font-size: 18px;
         padding: 0 3%;
+        text-align: left;
     }
     .form-contact {
         margin-top: 25px;
