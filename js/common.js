@@ -13,7 +13,9 @@ $('#barNav').on('click', function () {
 
 $('.js-goto').on('click', function () {
     let xx = $(this).attr('data-goto');
-    let hh = $(xx).offset().top - 140;
+    let ww = $(window).innerWidth();
+    let hh = 140;
+    ww > 768 ? hh = $(xx).offset().top - 140 : hh = $(xx).offset().top - 80;
     $('body, html').animate({
         scrollTop: hh
     }, 'slow');
