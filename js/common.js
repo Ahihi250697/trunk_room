@@ -1,35 +1,46 @@
-$('#barNav').on('click', function(){
-    if(!$(this).is('.active')){
+$('#barNav').on('click', function () {
+    if (!$(this).is('.active')) {
         $(this).addClass('active');
         $('.header-nav').addClass('active');
         $('html').css('overflow', 'hidden');
-    }else{
+    } else {
         $(this).removeClass('active');
         $('.header-nav').removeClass('active');
         $('html').css('overflow', 'visible');
     }
-    
+
+});
+
+$('.js-goto').on('click', function () {
+    let xx = $(this).attr('data-goto');
+    let hh = $(xx).offset().top - 140;
+    $('body, html').animate({
+        scrollTop: hh
+    }, 'slow');
+    return false;
 })
 
-$('#topPage').on('click', function(){
-    $('body, html').animate({scrollTop: 0}, 'slow');
+$('#topPage').on('click', function () {
+    $('body, html').animate({
+        scrollTop: 0
+    }, 'slow');
 });
 
 function getScrollTop() {
     return (
-      document.documentElement.scrollTop ||
-      document.body.scrollTop ||
-      window.scrollY ||
-      window.pageYOffset
+        document.documentElement.scrollTop ||
+        document.body.scrollTop ||
+        window.scrollY ||
+        window.pageYOffset
     );
-  }
+}
 
-window.addEventListener('scroll', function(){
-    if(getScrollTop() > 0) {
+window.addEventListener('scroll', function () {
+    if (getScrollTop() > 0) {
         $('#topPage').addClass('active');
         $('.btn-entySp').addClass('active');
         $('.header').addClass('active');
-    }else{
+    } else {
         $('#topPage').removeClass('active');
         $('.btn-entySp').removeClass('active');
         $('.header').removeClass('active');
