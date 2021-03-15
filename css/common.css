@@ -960,7 +960,13 @@ body .main {
 
     .support-email .btn-email svg {
         width: 36px;
+        width: clamp(25px, 9vw, 36px);
     }
+
+    .support-email .btn-email span{
+        font-size: clamp(1.3rem, 4vw, 1.6rem) !important;
+    }
+
     .footer {
         margin-top: 60px;
         padding-bottom: 75px;
