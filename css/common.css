@@ -4,6 +4,12 @@
     font-size: 4rem;
 }
 
+.call-tell {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
 .footer-logo, .contact-phone {
     font-size: 2.5rem;
 }
@@ -279,7 +285,7 @@ body .main {
 
 .contact-local {
     display: none;
-    font-size: clamp(1.2rem, 4vw, 1.4rem);
+    font-size: clamp(1.15rem, 4vw, 1.35rem);
 }
 
 .nav-lists {
@@ -403,13 +409,14 @@ body .main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     position: relative;
+}
+
+.support-phone .call-tell {
+    align-items: flex-start;
 }
 
 .support-phone::after {
@@ -906,7 +913,7 @@ body .main {
     }
 
     .contact-local img {
-        width: 23px;
+        width: 22px;
     }
     .nav-list {
         border-right: none !important;
@@ -960,7 +967,13 @@ body .main {
 
     .support-email .btn-email svg {
         width: 36px;
+        width: clamp(25px, 9vw, 36px);
     }
+
+    .support-email .btn-email span{
+        font-size: clamp(1.3rem, 4.2vw, 1.6rem) !important;
+    }
+
     .footer {
         margin-top: 60px;
         padding-bottom: 75px;
