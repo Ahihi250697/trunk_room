@@ -463,6 +463,7 @@
     }
 
     .security-box .security__img {
+        width: 300px;
         max-width: calc(100% - 40px);
         margin: 0 auto;
     }
