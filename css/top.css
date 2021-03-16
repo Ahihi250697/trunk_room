@@ -93,6 +93,9 @@
     font-size: clamp(1.9rem, 2vw, 2.3rem);
     line-height: 1.3;
 }
+.noFee-box:not(:last-child) strong {
+    letter-spacing: 0.025em;
+}
 
 .noFee-box:last-child .noFee-target img {
     margin-right: 11px;
@@ -140,6 +143,7 @@
     padding: 0 20px;
 }
 
+
 .noFee-target img {
     margin-right: 21px;
 }
@@ -172,6 +176,10 @@
 
 .storage {
     position: relative;
+}
+
+.storage .btn-oran {
+    letter-spacing: 0.02em;
 }
 
 .storage img {
@@ -280,6 +288,7 @@
     white-space: pre-line;
     text-align: center;
     font-weight: 700;
+    line-height: 1.75;
     height: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
