@@ -175,6 +175,7 @@
     font-size: 2rem;
     background-color: #FFF8F1;
     letter-spacing: 2px;
+    padding: 10px;
 }
 
 .payment-method .method-block .method__title .icon.icon-note {
