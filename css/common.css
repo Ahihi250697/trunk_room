@@ -279,7 +279,7 @@ body .main {
 
 .contact-local {
     display: none;
-    font-size: clamp(1.2rem, 4vw, 1.4rem);
+    font-size: clamp(1.15rem, 4vw, 1.35rem);
 }
 
 .nav-lists {
@@ -906,7 +906,7 @@ body .main {
     }
 
     .contact-local img {
-        width: 23px;
+        width: 22px;
     }
     .nav-list {
         border-right: none !important;

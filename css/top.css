@@ -469,6 +469,7 @@
         max-width: 240px;
         width: 39vw;
         min-width: 85px;
+        flex-shrink: 0;
     }
     .useTarget-passage {
         height: auto;
@@ -483,7 +484,8 @@
         margin-top: 45px;
     }
     .sanadayama-lists {
-        display: block;
+        /* display: block; */
+        flex-direction: column;
         padding: 0;
         margin-top: 40px;
     }
@@ -493,6 +495,24 @@
         margin-left: auto;
         width: 100%;
         margin-bottom: 30px;
+    }
+    .sanadayama-list:nth-child(1) {
+        order: 0;
+    }
+    .sanadayama-list:nth-child(2) {
+        order: 3;
+    }
+    .sanadayama-list:nth-child(3) {
+        order: 1;
+    }
+    .sanadayama-list:nth-child(4) {
+        order: 4;
+    }
+    .sanadayama-list:nth-child(5) {
+        order: 2;
+    }
+    .sanadayama-list:nth-child(6) {
+        order: 5;
     }
 
     .sanadayama-list:last-child {
