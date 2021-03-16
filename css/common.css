@@ -4,6 +4,12 @@
     font-size: 4rem;
 }
 
+.call-tell {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
 .footer-logo, .contact-phone {
     font-size: 2.5rem;
 }
@@ -403,13 +409,14 @@ body .main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     position: relative;
+}
+
+.support-phone .call-tell {
+    align-items: flex-start;
 }
 
 .support-phone::after {
