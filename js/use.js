@@ -4,6 +4,7 @@
 // });
 $(window).on('load', function () {
     let _id = window.location.href.split('#')[1];
+    if (_id === undefined) return;
     let ww = $(window).innerWidth();
     //let aa = $('#'+_id).offset().top;
     let hh = 140;
