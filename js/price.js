@@ -2,6 +2,7 @@ $(function() {
     "use strict";
     var obj = {
         init: function() {
+
             //Anchor link
             $('a[href^="#"]').click(function() {
                 if ($($(this).attr('href')).length) {
