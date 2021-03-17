@@ -78,7 +78,8 @@
     margin-bottom: 8px;
     justify-content: space-between;
     margin-top: 50px;
-    padding: 7px 57px;
+    /* padding: 7px 57px; */
+    padding: 57px 57px;
     border-radius: 12px;
     border: 2px solid #CCCCCC;
 }
@@ -87,7 +88,7 @@
     width: 100%;
     text-align: center;
     font-size: 2rem;
-    margin-top: 59px;
+    /* margin-top: 59px; */
 }
 
 .what-you-need-for-contract .wyn-title .icon.icon-note {
